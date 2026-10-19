@@ -1,8 +1,426 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sl">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#294f3d"><title>Setveni koledar — Vrt v svojem ritmu</title><link rel="stylesheet" href="style.css"></head>
-<body>
-<header><a class="brand" href="#">♧ <span>setveni<span class="light">koledar</span><small>VSAKO SEME IMA SVOJ ČAS</small></span></a><nav><a href="#koledar" class="active">Setveni koledar</a><a href="#vrt">Moj vrt <span id="count">0</span></a><a href="#nasvet">Vrtnarski nasveti ↗</a></nav><span class="region">⌖ Slovenija</span></header>
-<main><section class="hero"><div class="hero-copy"><div class="eyebrow">ZA MAJHNE IN VELIKE VRTOVE</div><h1>Dober vrt se začne<br>ob <em>pravem času.</em></h1><p>Od prvega semena do polne košare. Odkrijte, kaj sejati,<br class="desktop"> saditi in pobirati — mesec za mesecem.</p><a class="primary" href="#koledar">Kaj sejemo ta mesec <span>↗</span></a><div class="hero-note"><span>☀</span> V ritmu narave. Z ljubeznijo do vrta.</div></div><div class="garden-art" aria-label="Ilustracija vrta"><div class="sun"></div><div class="orbit"></div><div class="plant p1">🌿</div><div class="plant p2">🥕</div><div class="plant p3">🌱</div><div class="plant p4">🥬</div><div class="soil"></div><div class="art-label">Počasi raste.<br><em>Dobro obrodi.</em></div><div class="badge">DOMAČE JE<br><strong>najlepše.</strong><span>✳</span></div></div></section>
-<section id="koledar" class="calendar"><div class="section-heading"><div><div class="eyebrow">VAŠ VRTNARSKI SOPOTNIK</div><h2>Vsak mesec nekaj novega.</h2></div><div class="year"><button id="prev" aria-label="Prejšnje leto">‹</button><span id="year">2026</span><button id="next" aria-label="Naslednje leto">›</button></div></div><div class="months" id="months"></div><div class="month-intro"><div><h3 id="month-title"></h3><p id="month-description"></p></div><span class="season" id="season"></span></div><div class="toolbar"><div class="filters" id="filters"><button class="selected" data-filter="all">Vse rastline</button><button data-filter="out">♧ Na prostem</button><button data-filter="in">⌂ V notranjih prostorih</button><button data-filter="harvest">♧ Pobiranje</button></div><label class="search">⌕ <input id="search" placeholder="Poiščite rastlino …" aria-label="Poiščite rastlino"></label></div><div class="results"><span id="results-count"></span><span>Pravi čas za nove začetke 🌱</span></div><div class="cards" id="cards"></div><p class="climate">ⓘ Termini so okvirni za osrednjo Slovenijo. Upoštevajte vreme, nadmorsko višino in navodila na semenski vrečki.</p></section>
-<section class="tip" id="nasvet"><div class="tip-icon">☀</div><div><div class="eyebrow">MALI NASVET, VELIKA RAZLIKA</div><h3>Najprej spoznajte svojo zemljo.</h3><p>Pred setvijo preverite, ali je prst dovolj ogreta in rahla. Pest zemlje nežno stisnite — če se drobi med prsti, je pripravljena na nov začetek.</p></div><span class="tip-drawing">🌱</span></section><section id="vrt" class="my-garden"><div class="eyebrow">VAŠ KOŠČEK ZELENEGA</div><h2>Moj vrt <span>♧</span></h2><p>Rastline dodajte z znakom + na kartici. Vaš izbor ostane shranjen v tem brskalniku.</p><div id="saved"></div></section></main><footer><span>♧ setvenikoledar</span><span>Manj hitenja. Več zelenega.</span><span>Zraslo z ljubeznijo. © 2026</span></footer><div id="toast" role="status"></div><script src="app.js"></script></body></html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#093b32" />
+    <meta
+      name="description"
+      content="Vaš mesečni vodnik po zelenjavnem vrtu. Preverite, kaj sejati, saditi in pobirati, spoznajte rastline in sestavite svoj vrt."
+    />
+    <title>Setveni koledar — Za vrt, poln življenja</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <svg
+      class="svg-library"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <symbol id="i-leaves" viewBox="0 0 48 48">
+        <path d="M23 42C7 40 3 30 5 12c15 1 25 8 18 30Z" fill="#0f6131" />
+        <path d="M24 42C18 22 29 9 44 7c3 18-2 32-20 35Z" fill="#24a879" />
+        <path
+          d="m25 41 11-23M22 39 11 21"
+          stroke="#093b32"
+          stroke-width="1.5"
+          fill="none"
+        />
+      </symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24">
+        <path d="M4 12h15m-6-6 6 6-6 6" />
+      </symbol>
+      <symbol id="i-chevron" viewBox="0 0 24 24">
+        <path d="m8 5 7 7-7 7" />
+      </symbol>
+      <symbol id="i-search" viewBox="0 0 24 24">
+        <circle cx="10.5" cy="10.5" r="6.5" />
+        <path d="m16 16 5 5" />
+      </symbol>
+      <symbol id="i-heart" viewBox="0 0 24 24">
+        <path
+          d="M20.5 5.5c-2.3-2.5-6.2-1.5-8.5 1-2.3-2.5-6.2-3.5-8.5-1C-1 10.5 6 16 12 21c6-5 13-10.5 8.5-15.5Z"
+        />
+      </symbol>
+      <symbol id="i-calendar" viewBox="0 0 32 32">
+        <rect x="4" y="7" width="24" height="22" rx="3" />
+        <path d="M4 14h24M10 3v8M22 3v8m-12 9h4m4 0h4m-12 5h4" />
+      </symbol>
+      <symbol id="i-sprout" viewBox="0 0 32 32">
+        <path
+          d="M16 29V16C5 17 3 10 4 5c9 0 13 4 12 11Zm0 5c0-12 5-16 13-16 0 9-4 14-13 13M6 29h20"
+        />
+      </symbol>
+      <symbol id="i-sun" viewBox="0 0 32 32">
+        <circle cx="16" cy="16" r="7" />
+        <path
+          d="M16 1v5m0 20v5M1 16h5m20 0h5M5 5l4 4m14 14 4 4M5 27l4-4M23 9l4-4"
+        />
+      </symbol>
+      <symbol id="i-book" viewBox="0 0 32 32">
+        <path
+          d="M16 8C12 4 5 4 2 5v22c4-2 10-2 14 2 4-4 10-4 14-2V5c-3-1-10-1-14 3Zm0 0v21M7 11h4m-4 5h4m10-5h4m-4 5h4"
+        />
+      </symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24">
+        <path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z" />
+        <circle cx="12" cy="10" r="2" />
+      </symbol>
+      <symbol id="i-check" viewBox="0 0 24 24">
+        <path d="m5 12 4 4L20 5" />
+      </symbol>
+      <symbol id="i-close" viewBox="0 0 24 24">
+        <path d="m5 5 14 14M19 5 5 19" />
+      </symbol>
+    </svg>
+    <a class="skip-link" href="#koledar">Preskoči na koledar</a>
+    <header class="site-header">
+      <div class="service-bar">
+        <div class="container service-inner">
+          <span>VSAKO SEME IMA SVOJ ČAS.</span>
+          <div>
+            <a href="#search"
+              ><svg class="icon"><use href="#i-search" /></svg> ISKANJE</a
+            ><span
+              ><svg class="icon"><use href="#i-pin" /></svg> OSREDNJA
+              SLOVENIJA</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="container navigation">
+        <a class="brand" href="#" aria-label="Setveni koledar — začetna stran"
+          ><svg class="brand-mark"><use href="#i-leaves" /></svg
+          ><span>setvenikoledar<small>Svoj vrt. Svoj ritem.</small></span></a
+        ><button
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-expanded="false"
+          aria-controls="main-nav"
+          aria-label="Odpri meni"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="main-nav" aria-label="Glavna navigacija">
+          <a href="#koledar">Setveni koledar <span class="nav-down">⌄</span></a
+          ><a href="#rastline">Rastline</a
+          ><a href="#nasveti">Nasveti in navdih</a
+          ><a href="#vrt" class="button button-small"
+            ><svg class="icon"><use href="#i-heart" /></svg> Moj vrt
+            <span id="count">0</span></a
+          >
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-photo">
+          <img
+            src="assets/garden-hero.webp"
+            alt="Sajenje solate v domačo zelenjavno gredo"
+            width="1440"
+            height="468"
+            fetchpriority="high"
+          />
+          <div class="hero-shade"></div>
+          <div class="container hero-content">
+            <p class="hero-eyebrow">DOBRODOŠLI V SVOJEM ZELENEM KOTIČKU</p>
+            <h1 id="hero-title">ZA VRT,<br />POLN ŽIVLJENJA.</h1>
+            <p>
+              Od prvega semena do polne košare.<br />Naj vaš vrt raste v pravem
+              ritmu.
+            </p>
+            <a class="button" href="#koledar"
+              >Odkrijte setveni koledar
+              <svg class="icon"><use href="#i-chevron" /></svg
+            ></a>
+          </div>
+          <p class="hero-bottom">Majhni začetki. Veliko veselja.</p>
+        </div>
+        <div class="hero-seal" aria-hidden="true">
+          <svg><use href="#i-leaves" /></svg
+          ><span>POSADI<br /><strong>nekaj lepega.</strong></span>
+        </div>
+      </section>
+      <section class="explore" aria-labelledby="explore-title">
+        <div class="container">
+          <h2 id="explore-title">VSE ZA VAŠ VRT. NA ENEM MESTU.</h2>
+          <div class="explore-links">
+            <a href="#koledar"
+              ><svg><use href="#i-calendar" /></svg><span>Setveni koledar</span
+              ><span>›</span></a
+            ><a href="#rastline"
+              ><svg><use href="#i-sprout" /></svg><span>Spoznajte rastline</span
+              ><span>›</span></a
+            ><a href="#nasveti"
+              ><svg><use href="#i-book" /></svg><span>Nasveti za rast</span
+              ><span>›</span></a
+            ><a href="#vrt"
+              ><svg><use href="#i-heart" /></svg><span>Vaš mali vrt</span
+              ><span>›</span></a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="container seasonal" aria-labelledby="seasonal-title">
+        <div class="seasonal-copy">
+          <span class="eyebrow">TA MESEC NA VRTU</span>
+          <h2 id="seasonal-title">JESEN JE TU.<br />VRT ŠE VEDNO ŽIVI.</h2>
+          <p id="seasonal-description">
+            Dnevi so krajši, košare pa še vedno polne. Izkoristite prijetno
+            vreme za jesensko setev, sajenje česna in pripravo gredic na zimo.
+          </p>
+          <a href="#koledar" class="button"
+            >Kaj lahko naredim ta mesec
+            <svg class="icon"><use href="#i-chevron" /></svg
+          ></a>
+        </div>
+        <img
+          id="seasonal-image"
+          class="seasonal-image"
+          src="assets/autumn-garden.webp"
+          alt="Jesensko listje in grablje na vrtu"
+          width="1124"
+          height="840"
+          loading="lazy"
+        />
+      </section>
+      <section
+        id="koledar"
+        class="calendar-section"
+        aria-labelledby="calendar-title"
+      >
+        <div class="container">
+          <div class="section-intro">
+            <span class="eyebrow">DOBER ČAS ZA NOVE ZAČETKE</span>
+            <h2 id="calendar-title">VAŠ MESEČNI<br />SETVENI KOLEDAR</h2>
+            <p>Izberite mesec in odkrijte, kaj sejati, saditi in pobirati.</p>
+          </div>
+          <div class="month-picker">
+            <div
+              id="months"
+              class="months"
+              role="group"
+              aria-label="Izberite mesec"
+            ></div>
+            <button class="this-month" id="this-month">
+              Ta mesec <svg class="icon"><use href="#i-arrow" /></svg>
+            </button>
+          </div>
+          <div class="month-intro">
+            <div>
+              <h3 id="month-title"></h3>
+              <p id="month-description"></p>
+            </div>
+            <span id="season" class="season"></span>
+          </div>
+          <div class="toolbar">
+            <div
+              id="filters"
+              class="filters"
+              role="group"
+              aria-label="Vrsta opravila"
+            >
+              <button data-filter="all" class="selected" aria-pressed="true">
+                Vse rastline</button
+              ><button data-filter="out" aria-pressed="false">Na prostem</button
+              ><button data-filter="in" aria-pressed="false">Na toplem</button
+              ><button data-filter="harvest" aria-pressed="false">
+                Pobiranje
+              </button>
+            </div>
+            <label class="search"
+              ><svg class="icon"><use href="#i-search" /></svg
+              ><input
+                type="search"
+                id="search"
+                placeholder="Poiščite rastlino …"
+                aria-label="Poiščite rastlino"
+            /></label>
+          </div>
+          <div class="results">
+            <p id="results-count" aria-live="polite"></p>
+            <span>V ritmu narave, mesec za mesecem.</span>
+          </div>
+          <div id="cards" class="cards"></div>
+          <p class="climate-note">
+            <svg class="icon"><use href="#i-pin" /></svg> Okvirni termini za
+            osrednjo Slovenijo. Prilagodite jih vremenu, nadmorski višini, sorti
+            in navodilom na semenski vrečki.
+          </p>
+        </div>
+      </section>
+      <section
+        id="rastline"
+        class="container plant-directory"
+        aria-labelledby="plants-title"
+      >
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">OD SEMENA DO PRIDELKA</span>
+            <h2 id="plants-title">SPOZNAJTE SVOJE RASTLINE</h2>
+          </div>
+          <p>
+            Majhen vodnik za velike in male vrtnarje.<br />Izberite rastlino in
+            preberite osnove gojenja.
+          </p>
+        </div>
+        <div class="plant-links" id="plant-links"></div>
+      </section>
+      <section
+        id="nasveti"
+        class="advice-section"
+        aria-labelledby="advice-title"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <h2 id="advice-title">MALO NAVDIHA.<br />VELIKO ZELENEGA.</h2>
+            <span>Znanje, ki raste skupaj z vami.</span>
+          </div>
+          <div class="advice-layout">
+            <button class="featured-advice" data-advice="soil">
+              <img
+                src="assets/garden-hero.webp"
+                alt="Domača zelenjavna greda"
+                width="800"
+                height="600"
+                loading="lazy"
+              /><span class="featured-advice-copy"
+                ><span class="eyebrow">DOBRI TEMELJI</span
+                ><strong>Najlepši vrt se začne<br />z dobro zemljo.</strong
+                ><span
+                  >Preberite nasvet
+                  <svg class="icon"><use href="#i-chevron" /></svg></span
+              ></span>
+            </button>
+            <div class="small-advice">
+              <button data-advice="garlic">
+                <img
+                  src="assets/plant-cesen.webp"
+                  alt="Česen"
+                  width="200"
+                  height="180"
+                  loading="lazy"
+                /><span
+                  ><strong>Česen: posadite ga jeseni, uživajte poleti.</strong
+                  ><span
+                    >Preberite nasvet
+                    <svg class="icon"><use href="#i-chevron" /></svg></span
+                ></span></button
+              ><button data-advice="water">
+                <img
+                  src="assets/plant-solata.webp"
+                  alt="Listnata solata"
+                  width="200"
+                  height="180"
+                  loading="lazy"
+                /><span
+                  ><strong>Manj pogosto, a temeljito. Tako zalivamo.</strong
+                  ><span
+                    >Preberite nasvet
+                    <svg class="icon"><use href="#i-chevron" /></svg></span
+                ></span></button
+              ><button data-advice="sowing">
+                <img
+                  src="assets/plant-korenje.webp"
+                  alt="Korenje"
+                  width="200"
+                  height="180"
+                  loading="lazy"
+                /><span
+                  ><strong>Majhna semena potrebujejo malo potrpljenja.</strong
+                  ><span
+                    >Preberite nasvet
+                    <svg class="icon"><use href="#i-chevron" /></svg></span
+                ></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="vrt"
+        class="container my-garden"
+        aria-labelledby="garden-title"
+      >
+        <div class="garden-heading">
+          <div>
+            <span class="eyebrow">VAŠ KOŠČEK ZELENEGA</span>
+            <h2 id="garden-title">MOJ VRT</h2>
+            <p>
+              Najljubše rastline shranite s srčkom. Vaš izbor vas bo tu čakal
+              tudi naslednjič.
+            </p>
+          </div>
+          <svg class="garden-illustration" aria-hidden="true">
+            <use href="#i-sprout" />
+          </svg>
+        </div>
+        <div id="saved"></div>
+        <p class="storage-note">
+          Izbor se shrani samo v ta brskalnik. Račun in prijava nista potrebna.
+        </p>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-about">
+            <a class="brand" href="#"
+              ><svg class="brand-mark"><use href="#i-leaves" /></svg
+              ><span
+                >setvenikoledar<small>Svoj vrt. Svoj ritem.</small></span
+              ></a
+            >
+            <p>
+              Za vse, ki verjamemo, da je domače najlepše. Malo zemlje, nekaj
+              potrpljenja in veliko veselja do rasti.
+            </p>
+          </div>
+          <div>
+            <h3>NA VRTU</h3>
+            <a href="#koledar">Setveni koledar</a
+            ><a href="#rastline">Vodnik po rastlinah</a
+            ><a href="#nasveti">Nasveti in navdih</a><a href="#vrt">Moj vrt</a>
+          </div>
+          <div>
+            <h3>SKOZI LETO</h3>
+            <a href="#koledar" data-go-month="3">Pomladni začetki</a
+            ><a href="#koledar" data-go-month="6">Poletje na vrtu</a
+            ><a href="#koledar" data-go-month="9">Jesenska opravila</a
+            ><a href="#koledar" data-go-month="12">Zimski počitek</a>
+          </div>
+          <div>
+            <h3>DOBRO JE VEDETI</h3>
+            <p>
+              Koledar je splošen vrtnarski vodnik. Pri setvi naj imata zadnjo
+              besedo vreme in vaša zemlja.
+            </p>
+            <span class="footer-location"
+              ><svg class="icon"><use href="#i-pin" /></svg> Osrednja
+              Slovenija</span
+            >
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>Manj hitenja. Več zelenega.</span
+          ><span>© <span id="copyright-year">2026</span> Setveni koledar</span
+          ><a href="#">Nazaj na vrh ↑</a>
+        </div>
+      </div>
+    </footer>
+    <dialog id="detail-dialog" aria-labelledby="dialog-title">
+      <button
+        class="dialog-close"
+        id="dialog-close"
+        aria-label="Zapri podrobnosti"
+      >
+        <svg class="icon"><use href="#i-close" /></svg>
+      </button>
+      <div id="dialog-content"></div>
+    </dialog>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
