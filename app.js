@@ -157,10 +157,118 @@ const plants = [
     depth: "1 cm",
     days: "20–24 tednov",
   },
+  {
+    id: "bazilika",
+    name: "Bazilika",
+    latin: "Ocimum basilicum",
+    kind: "herb",
+    icon: "🌿",
+    color: "#e3eedc",
+    out: [5, 6],
+    inside: [3, 4, 5],
+    harvest: [6, 7, 8, 9],
+    depth: "0,5 cm",
+    days: "8–12 tednov",
+  },
+  {
+    id: "petersilj",
+    name: "Peteršilj",
+    latin: "Petroselinum crispum",
+    kind: "herb",
+    icon: "🌿",
+    color: "#e4ecda",
+    out: [3, 4, 5, 6, 7, 8],
+    inside: [2, 3],
+    harvest: [5, 6, 7, 8, 9, 10, 11],
+    depth: "1 cm",
+    days: "10–14 tednov",
+  },
+  {
+    id: "drobnjak",
+    name: "Drobnjak",
+    latin: "Allium schoenoprasum",
+    kind: "herb",
+    icon: "🌿",
+    color: "#ede7f0",
+    out: [3, 4, 5, 9, 10],
+    inside: [],
+    harvest: [4, 5, 6, 7, 8, 9, 10],
+    depth: "Višina grude",
+    days: "Po ukoreninjenju",
+  },
+  {
+    id: "meta",
+    name: "Meta",
+    latin: "Mentha spp.",
+    kind: "herb",
+    icon: "🌿",
+    color: "#dfeddf",
+    out: [4, 5, 6, 9],
+    inside: [],
+    harvest: [5, 6, 7, 8, 9, 10],
+    depth: "Višina grude",
+    days: "Po ukoreninjenju",
+  },
+  {
+    id: "timijan",
+    name: "Timijan",
+    latin: "Thymus vulgaris",
+    kind: "herb",
+    icon: "🌿",
+    color: "#ecebd9",
+    out: [4, 5, 6, 9],
+    inside: [],
+    harvest: [5, 6, 7, 8, 9, 10],
+    depth: "Višina grude",
+    days: "Po ukoreninjenju",
+  },
+  {
+    id: "rozmarin",
+    name: "Rožmarin",
+    latin: "Salvia rosmarinus",
+    kind: "herb",
+    icon: "🌿",
+    color: "#e4ebdf",
+    out: [4, 5, 6],
+    inside: [],
+    harvest: [4, 5, 6, 7, 8, 9, 10],
+    depth: "Višina grude",
+    days: "Po ukoreninjenju",
+  },
 ];
 
 ("use strict");
 const guides = {
+  bazilika: {
+    light: "Topla, sončna in zavetna lega",
+    spacing: "20–30 cm",
+    care: "Začnite s sadiko ali vzgojo na toplem. Na balkon jo prestavite po nevarnosti pozebe. Pobirajte vršičke nad parom listov in odstranjujte cvetne nastavke, da se rastlina razveji.",
+  },
+  petersilj: {
+    light: "Sonce ali svetla polsenca",
+    spacing: "10–15 cm",
+    care: "Uporabite vsaj 20 cm globoko posodo. Pri setvi bodite potrpežljivi: vznik je počasen, površina pa naj ostaja enakomerno vlažna. Pobirajte zunanje liste in ohranite sredico rastline.",
+  },
+  drobnjak: {
+    light: "Sonce ali svetla polsenca",
+    spacing: "15–20 cm med šopi",
+    care: "Najlažje začnete s sadiko ali razdeljenim šopom. Liste režite nekaj centimetrov nad zemljo. V posodi ohranjajte zmerno vlago; uveljavljeno rastlino lahko pobirate večkrat.",
+  },
+  meta: {
+    light: "Svetla polsenca ali sonce z dovolj vlage",
+    spacing: "Ena rastlina v svoji posodi",
+    care: "Meta se močno razrašča, zato jo gojite v lastni posodi. Poskrbite za vlago in odtok vode. Mlade vršičke pobirajte sproti; presajanje v večjo posodo prilagodite rasti korenin.",
+  },
+  timijan: {
+    light: "Sončna lega",
+    spacing: "20–30 cm",
+    care: "Posadite sadiko v dobro odceden substrat. Timijan ne mara stalno mokre zemlje. Poganjke režite zmerno in ne globoko v star les. Posodo pozimi zaščitite pred dolgotrajno mokroto.",
+  },
+  rozmarin: {
+    light: "Sončna in zavetna lega",
+    spacing: "Ena rastlina v večji posodi",
+    care: "Začnite s sadiko in uporabite odceden substrat ter lonec z odtočnimi luknjami. Med zalivanji naj se površina nekoliko osuši. V mrzlih legah posodo prezimite na svetlem, hladnem mestu brez hudega mraza.",
+  },
   solata: {
     light: "Sonce ali polsenca",
     spacing: "25–30 cm",
@@ -369,7 +477,17 @@ function tags(p) {
   if (p.out.includes(month))
     result +=
       '<span class="tag">' +
-      (["cesen", "paradiznik", "paprika", "bucka", "por"].includes(p.id)
+      ([
+        "cesen",
+        "paradiznik",
+        "paprika",
+        "por",
+        "bazilika",
+        "drobnjak",
+        "meta",
+        "timijan",
+        "rozmarin",
+      ].includes(p.id)
         ? "Sajenje na prosto"
         : "Setev na prosto") +
       "</span>";

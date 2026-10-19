@@ -1,7 +1,7 @@
 # Setveni koledar
 
 Odziven mesečni vrtnarski vodnik v slovenščini: izbor meseca, filtri opravil,
-iskanje po rastlinah, osnovni vodniki za 12 vrtnin, štirje nasveti in osebni vrt.
+iskanje po rastlinah, osnovni vodniki za 12 vrtnin in 6 zelišč, štirje nasveti in osebni vrt.
 Izbor se shranjuje lokalno v brskalniku, pod ključem `setveni-vrt`.
 
 ## Osebni načrtovalnik
@@ -27,6 +27,12 @@ Vse ostane v trenutnem brskalniku. Načrtovalnik deluje tudi brez trajnega
 shranjevanja in takrat pokaže obvestilo. Ni prijave, API-ja ali prenosa teh
 podatkov na strežnik.
 
+Balkonski predlog daje prednost zeliščem: baziliki, peteršilju, drobnjaku, meti,
+timijanu in rožmarinu. Zelenjava ostane dodatna možnost. Podprte so tudi manjše
+posode 3/5 l in uporabna globina 15 cm. Predlog še vedno preveri potrebe vsake
+rastline; meta potrebuje svojo posodo, timijan in rožmarin sončno lego, občutljiva
+bazilika pa dovolj toplote. Uveljavljena zelišča imajo opravila za sprotno nabiranje.
+
 Model je v `planner-engine.js`, uporabniški vmesnik v `planner.js` in `planner.css`.
 Površina se rezervira za skupino ene vrste; samodejnih zaporednih posevkov v isto
 posodo ali natančnega večletnega kolobarja model ne računa. Opravila so sezonska
@@ -37,6 +43,17 @@ Preizkusi modela brez dodatnih odvisnosti:
 ```sh
 node --test tests/planner-engine.test.cjs
 ```
+
+Po spremembi JavaScripta ali slogov posodobite različice datotek v HTML. Tako
+brskalnik ob objavi ne uporabi starih skriptov skupaj z novim vmesnikom:
+
+```sh
+node scripts/update-asset-versions.cjs
+node --test tests/*.test.cjs
+```
+
+Različica v URL-ju je izračunana iz vsebine datoteke. Test pred objavo preveri,
+da HTML kaže na aktualne različice ter ohrani vrstni red zagona skriptov.
 
 ## Lokalni zagon
 

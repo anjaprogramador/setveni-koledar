@@ -144,6 +144,72 @@
       "bytes": 63660,
       "source_site": "Love The Garden / Evergreen Garden Care",
       "rights_note": "Publicly accessible source image; no open reuse licence asserted."
+    },
+    {
+      "id": "bazilika",
+      "page_url": "https://www.lovethegarden.com/uk-en/growing-guide/how-grow-basil",
+      "image_url": "https://www.lovethegarden.com/sites/default/files/content/articles/UK_advice-gardening-grow-your-own-how-grow-basil_main.jpg",
+      "file": "assets/plant-bazilika.webp",
+      "width": 640,
+      "height": 480,
+      "bytes": 30200,
+      "source_site": "Love The Garden / Evergreen Garden Care",
+      "rights_note": "Publicly accessible source image; no open reuse licence asserted."
+    },
+    {
+      "id": "petersilj",
+      "page_url": "https://www.lovethegarden.com/uk-en/article/parsley-petroselinum-crispum",
+      "image_url": "https://www.lovethegarden.com/sites/default/files/styles/scale_md_col_12/public/content/articles/UK_italian-flat-leaf-parsley.jpg.webp?itok=4VgGl6oN",
+      "file": "assets/plant-petersilj.webp",
+      "width": 640,
+      "height": 480,
+      "bytes": 42702,
+      "source_site": "Love The Garden / Evergreen Garden Care",
+      "rights_note": "Publicly accessible source image; no open reuse licence asserted."
+    },
+    {
+      "id": "drobnjak",
+      "page_url": "https://www.lovethegarden.com/uk-en/article/chives-allium-schoenoprasum",
+      "image_url": "https://www.lovethegarden.com/sites/default/files/styles/scale_md_col_12/public/content/articles/UK_chives-growing.jpg.webp?itok=HWnbFH6-",
+      "file": "assets/plant-drobnjak.webp",
+      "width": 640,
+      "height": 480,
+      "bytes": 54594,
+      "source_site": "Love The Garden / Evergreen Garden Care",
+      "rights_note": "Publicly accessible source image; no open reuse licence asserted."
+    },
+    {
+      "id": "meta",
+      "page_url": "https://www.lovethegarden.com/uk-en/article/mint-mentha",
+      "image_url": "https://www.lovethegarden.com/sites/default/files/styles/scale_md_col_12/public/content/articles/UK_harvesting-mint.jpg.webp?itok=x5q8zEFO",
+      "file": "assets/plant-meta.webp",
+      "width": 640,
+      "height": 480,
+      "bytes": 55200,
+      "source_site": "Love The Garden / Evergreen Garden Care",
+      "rights_note": "Publicly accessible source image; no open reuse licence asserted."
+    },
+    {
+      "id": "timijan",
+      "page_url": "https://www.lovethegarden.com/uk-en/article/thyme-thymus",
+      "image_url": "https://www.lovethegarden.com/sites/default/files/styles/scale_lg_col_8/public/content/articles/UK_thyme-plant-growing.jpg.webp?itok=A3xmtyTg",
+      "file": "assets/plant-timijan.webp",
+      "width": 624,
+      "height": 468,
+      "bytes": 93716,
+      "source_site": "Love The Garden / Evergreen Garden Care",
+      "rights_note": "Publicly accessible source image; no open reuse licence asserted."
+    },
+    {
+      "id": "rozmarin",
+      "page_url": "https://www.lovethegarden.com/uk-en/article/rosemary-rosmarinus-officinalis",
+      "image_url": "https://www.lovethegarden.com/sites/default/files/styles/scale_md_col_12/public/content/articles/UK_harvesting-fresh-rosemary.jpg.webp?itok=_LH3xkn9",
+      "file": "assets/plant-rozmarin.webp",
+      "width": 640,
+      "height": 480,
+      "bytes": 35880,
+      "source_site": "Love The Garden / Evergreen Garden Care",
+      "rights_note": "Publicly accessible source image; no open reuse licence asserted."
     }
   ],
   "missing": []

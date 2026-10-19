@@ -2023,3 +2023,69 @@
     flex-wrap: wrap;
   }
 }
+.planner-plant-group + .planner-plant-group {
+  margin-top: 25px;
+}
+.planner-group-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 800;
+  color: var(--green);
+  font-size: 14px;
+  padding: 0;
+  margin-bottom: 6px;
+}
+.planner-group-title > span {
+  font-size: 9px;
+  font-weight: 600;
+  background: #e4ebd9;
+  border-radius: 50%;
+  height: 21px;
+  min-width: 21px;
+  display: grid;
+  place-items: center;
+}
+.planner-group-description {
+  font-size: 10px;
+  line-height: 1.8;
+  color: #70806a;
+  margin: 0 0 15px;
+}
+@media (max-width: 767px) {
+  .planner-group-title {
+    font-size: 13px;
+  }
+  .planner-group-description {
+    font-size: 11px;
+  }
+  .planner-plant-group + .planner-plant-group {
+    margin-top: 23px;
+  }
+}
+.planner-optional-plants {
+  margin-top: 24px;
+  border: 1px solid #d6e0cc;
+  border-radius: 10px;
+  background: #fff;
+}
+.planner-optional-plants > summary {
+  cursor: pointer;
+  padding: 15px 16px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--green);
+  line-height: 1.8;
+}
+.planner-optional-plants > summary > span {
+  font-size: 9px;
+  font-weight: 400;
+  color: #738169;
+  margin-left: 7px;
+}
+.planner-optional-plants > div {
+  padding: 5px 16px 18px;
+}
+.planner-optional-plants .planner-group-title {
+  font-size: 12px;
+}

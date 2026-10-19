@@ -80,7 +80,7 @@
         version: 1,
         space: null,
         garden: { area: 6, sun: null, previousGroup: "none" },
-        balcony: { pots: 4, liters: 15, depth: 30, sun: null },
+        balcony: { pots: 4, liters: 5, depth: 20, sun: null },
         selected: app.getSaved(),
       };
   const stepTitles = [
@@ -121,7 +121,7 @@
       [
         "balcony",
         "Imam balkon",
-        "Lonci, korita in zelene ideje za manjši prostor.",
+        "Zelišča, dišavnice in nekaj zelenjave v loncih.",
       ],
       [
         "both",
@@ -154,6 +154,8 @@
         "Prostornina posamezne posode",
         draft.balcony.liters,
         [
+          [3, "3 l · majhen zeliščni lonec"],
+          [5, "5 l · zeliščni lonec"],
           [8, "8 l · manjši lonec"],
           [15, "15 l · srednji lonec"],
           [30, "30 l · večji lonec"],
@@ -164,6 +166,7 @@
         "Uporabna globina zemlje",
         draft.balcony.depth,
         [
+          [15, "15 cm"],
           [20, "20 cm"],
           [30, "30 cm"],
           [40, "40 cm"],
@@ -202,14 +205,34 @@
     return engine.buildPlan({ ...draft, selected: selection }, app.plants);
   }
   function plantsStep() {
-    return `<div class="planner-selection-header"><p>Izberite, kaj želite gojiti. Preverimo, kaj se prilega vašim pogojem.</p><button type="button" class="text-button" id="suggest-selection">${svg("sprout")} Predlagaj mi izbor</button></div><fieldset class="planner-fieldset"><legend class="sr-only">Izberite želene rastline</legend><div class="planner-plant-choices">${app.plants
-      .map((p) => {
-        const fit = previewPlan([p.id]).placements.length > 0;
-        return `<label class="planner-plant-choice"><input type="checkbox" name="selected" value="${p.id}" ${draft.selected.includes(p.id) ? "checked" : ""}/><span class="choice-check">${svg("check")}</span><img src="assets/plant-${p.id}.webp" alt="" width="140" height="90" loading="lazy"/><strong>${p.name}</strong><span class="${fit ? "plant-fit" : "plant-not-fit"}">${fit ? "Ustreza pogojem" : "Preverite pogoje"}</span></label>`;
-      })
-      .join(
-        "",
-      )}</div></fieldset><p id="selection-summary" class="selection-summary" aria-live="polite"></p>`;
+    const herbFirst = hasBalcony(draft);
+    const herbs = app.plants.filter((p) => p.kind === "herb");
+    const vegetables = app.plants.filter((p) => p.kind !== "herb");
+    function choices(list, title, description) {
+      return `<fieldset class="planner-fieldset planner-plant-group"><legend class="planner-group-title">${title} <span>${list.length}</span></legend><p class="planner-group-description">${description}</p><div class="planner-plant-choices">${list
+        .map((p) => {
+          const fit = previewPlan([p.id]).placements.length > 0;
+          return `<label class="planner-plant-choice"><input type="checkbox" name="selected" value="${p.id}" ${draft.selected.includes(p.id) ? "checked" : ""}/><span class="choice-check">${svg("check")}</span><img src="assets/plant-${p.id}.webp" alt="" width="140" height="90" loading="lazy"/><strong>${p.name}</strong><span class="${fit ? "plant-fit" : "plant-not-fit"}">${fit ? "Ustreza pogojem" : "Preverite pogoje"}</span></label>`;
+        })
+        .join("")}</div></fieldset>`;
+    }
+    const herbGroup = choices(
+      herbs,
+      "Zelišča in dišavnice",
+      "Za kuhinjo, čaj in dišeč balkon. Vsakemu zelišču namenimo svojo posodo.",
+    );
+    let vegetableGroup = choices(
+      vegetables,
+      draft.space === "balcony" ? "Po želji še zelenjava" : "Zelenjava",
+      "Tudi zelenjava lahko uspeva v posodah, če ima dovolj prostora in sonca.",
+    );
+    if (draft.space === "balcony") {
+      const selectedVegetables = vegetables.some((p) =>
+        draft.selected.includes(p.id),
+      );
+      vegetableGroup = `<details class="planner-optional-plants" ${selectedVegetables ? "open" : ""}><summary>Želim dodati tudi zelenjavo <span>${vegetables.length} možnosti</span></summary><div>${vegetableGroup}</div></details>`;
+    }
+    return `<div class="planner-selection-header"><p>${herbFirst ? "Na balkonu začnite z zelišči. Zelenjavo dodajte po želji, če pogoji to dopuščajo." : "Izberite zelenjavo in zelišča za svoj vrt. Preverimo, kaj se prilega vašim pogojem."}</p><button type="button" class="text-button" id="suggest-selection">${svg("sprout")} Predlagaj mi izbor</button></div>${herbFirst ? herbGroup + vegetableGroup : vegetableGroup + herbGroup}<p id="selection-summary" class="selection-summary" aria-live="polite"></p>`;
   }
   function renderWizard(focus = false) {
     root.innerHTML = shell(
@@ -466,7 +489,7 @@
         version: 1,
         space: null,
         garden: { area: 6, sun: null, previousGroup: "none" },
-        balcony: { pots: 4, liters: 15, depth: 30, sun: null },
+        balcony: { pots: 4, liters: 5, depth: 20, sun: null },
         selected: [],
       };
       renderWizard(true);

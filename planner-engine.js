@@ -11,7 +11,7 @@
   const SUN = ["sun", "partial", "shade"];
   const defaults = {
     garden: { area: 6, sun: "sun", previousGroup: "none" },
-    balcony: { pots: 3, liters: 15, depth: 30, sun: "sun" },
+    balcony: { pots: 3, liters: 5, depth: 20, sun: "sun" },
   };
   // Each garden allocation reserves one small patch for the whole growing season.
   // Container recommendations assume compact/dwarf varieties where indicated.
@@ -183,6 +183,96 @@
         "Uporabite globoko posodo z rahlo zemljo; med rastlinami pustite 10–15 cm.",
       water: "Zalivajte redno, posebej po presajanju in v sušnem obdobju.",
     },
+    bazilika: {
+      group: "herb",
+      area: 0.15,
+      minLiters: 5,
+      minDepth: 20,
+      needsSun: false,
+      spacing: "20–25 cm med rastlinami",
+      gardenQuantity: "1–2 sadiki",
+      potQuantity: "1 sadika v posodi",
+      tip: "Potrebuje toplo, zavetno lego. Na prosto jo prestavite šele po nevarnosti pozebe; za dobro rast preverite vsaj 4 ure neposrednega sonca.",
+      potTip:
+        "Redno vršičkajte nad parom listov, da se razveji; cvetne nastavke odstranjujte.",
+      water:
+        "Zalivajte redno pri tleh; zemlja naj bo rahlo vlažna, voda pa naj ne zastaja.",
+    },
+    petersilj: {
+      group: "herb",
+      area: 0.15,
+      minLiters: 5,
+      minDepth: 20,
+      needsSun: false,
+      spacing: "15–20 cm med rastlinami",
+      gardenQuantity: "Manjša skupina za pobiranje listov",
+      potQuantity: "1–2 rastlini listnega peteršilja",
+      tip: "Za liste izberite listni peteršilj. Prenaša polsenco; seme kali počasi, zato zemljo do vznika ohranjajte vlažno.",
+      potTip:
+        "Za listni peteršilj uporabite vsaj 20 cm globoko posodo in pobirajte najprej zunanje liste; globlja posoda bolje zadržuje vlago.",
+      water:
+        "Ohranjajte enakomerno vlago, posebej med kalitvijo; ne pustite, da posoda presahne.",
+    },
+    drobnjak: {
+      group: "herb",
+      area: 0.15,
+      minLiters: 3,
+      minDepth: 15,
+      needsSun: false,
+      spacing: "20–25 cm med šopi",
+      gardenQuantity: "1 šop",
+      potQuantity: "1 šop v posodi",
+      tip: "Trajnica za sonce ali polsenco. Liste režite nekaj centimetrov nad zemljo, da lahko znova odžene.",
+      potTip:
+        "Gojite ga v svoji posodi; starejši pregost šop spomladi razdelite.",
+      water:
+        "Zalivajte zmerno in redno; prst naj se med aktivno rastjo povsem ne izsuši.",
+    },
+    meta: {
+      group: "herb",
+      area: 0.3,
+      minLiters: 8,
+      minDepth: 20,
+      needsSun: false,
+      spacing: "30–40 cm; korenine omejite",
+      gardenQuantity: "1 rastlina z omejenimi koreninami",
+      potQuantity: "1 rastlina v lastni posodi",
+      tip: "Bujno se razrašča s podzemnimi poganjki. Na vrtu jo gojite ločeno v posodi ali z ustrezno koreninsko pregrado.",
+      potTip:
+        "Meta naj ima lastno posodo, da ne preraste drugih zelišč. Dobro uspeva tudi v polsenci.",
+      water:
+        "Prst ohranjajte vlažno, vendar poskrbite za odtekanje odvečne vode.",
+    },
+    timijan: {
+      group: "herb",
+      area: 0.2,
+      minLiters: 3,
+      minDepth: 15,
+      needsSun: true,
+      spacing: "25–30 cm med rastlinami",
+      gardenQuantity: "1 rastlina",
+      potQuantity: "1 rastlina v posodi",
+      tip: "Potrebuje sonce in zelo odcedno zemljo. Poganjke režite zmerno, brez globokega reza v star les.",
+      potTip:
+        "Zaščitite ga pred zimskim zastajanjem vode; posoda naj ima odtočne luknje.",
+      water:
+        "Med zalivanji naj se vrhnja plast zemlje osuši; zalivajte zmerno.",
+    },
+    rozmarin: {
+      group: "herb",
+      area: 0.35,
+      minLiters: 15,
+      minDepth: 30,
+      needsSun: true,
+      spacing: "50–60 cm za mlado kompaktno rastlino",
+      gardenQuantity: "1 mlada kompaktna rastlina",
+      potQuantity: "1 mlada kompaktna rastlina",
+      tip: "Izberite kompaktno sorto za sončno, zavetno lego. Z leti potrebuje več prostora; izven blagih obalnih leg je prezimovanje na prostem negotovo.",
+      potTip:
+        "Večjo rastlino presadite v večjo posodo. Ob močnem mrazu jo prestavite v svetel, hladen prostor brez zmrzali.",
+      water:
+        "Zalivajte zmerno šele, ko se vrhnja plast osuši. Zlasti pozimi preprečite mokre korenine.",
+    },
   };
 
   function numeric(value) {
@@ -249,8 +339,8 @@
         !Number.isInteger(pots) ||
         pots < 1 ||
         pots > 30 ||
-        ![8, 15, 30, 50].includes(liters) ||
-        ![20, 30, 40].includes(depth) ||
+        ![3, 5, 8, 15, 30, 50].includes(liters) ||
+        ![15, 20, 30, 40].includes(depth) ||
         !SUN.includes(input.sun)
       )
         return null;
@@ -278,7 +368,7 @@
   function lightReasons(spec, light) {
     if (light === "shade")
       return [
-        "Manj kot 3 ure neposrednega sonca je za zanesljivo pridelavo te zelenjadnice premalo. Izberite svetlejše mesto.",
+        "Manj kot 3 ure neposrednega sonca je za zanesljivo pridelavo te rastline premalo. Izberite svetlejše mesto.",
       ];
     if (spec.needsSun && light !== "sun")
       return [
@@ -316,7 +406,7 @@
     };
     if (gardenActive)
       plan.notes.push(
-        "Vnesite samo uporabno površino gred brez poti. Prikazana površina je okviren prostor za manjšo skupino posamezne zelenjadnice.",
+        "Vnesite samo uporabno površino gred brez poti. Prikazana površina je okviren prostor za manjšo skupino zelenjave oziroma mlado zelišče.",
       );
     if (balconyActive) {
       plan.notes.push(
@@ -336,31 +426,41 @@
     ];
     if (activeLights.includes("partial"))
       plan.notes.push(
-        "Polsenca pomeni približno 3–5 ur neposrednega sonca. Listnata zelenjava jo dobro prenese; za korenovke, čebulnice in grah preverite vsaj 4 ure. Pri manj svetlobe je rast počasnejša.",
+        "Polsenca pomeni približno 3–5 ur neposrednega sonca. Listnata zelenjava, meta, peteršilj in drobnjak jo dobro prenesejo; za baziliko, korenovke, čebulnice in grah preverite vsaj 4 ure. Pri manj svetlobe je rast počasnejša.",
       );
     if (activeLights.includes("shade"))
       plan.notes.push(
-        "Globoka senca z manj kot 3 urami neposrednega sonca je za teh 12 zelenjadnic neprimerna za zanesljivo pridelavo. Svetla razpršena svetloba ni enaka neposrednemu soncu.",
+        "Globoka senca z manj kot 3 urami neposrednega sonca za zanesljivo pridelavo izbranih zelenjadnic in zelišč ni primerna. Svetla razpršena svetloba ni enaka neposrednemu soncu.",
       );
     // Larger and less container-friendly vegetables get first use of garden space.
-    // Only the combined-space mode reorders preferences for this allocation.
+    // Herbs get priority over vegetables in the limited balcony-only space.
     const order = [...profile.selected];
     if (profile.space === "both")
       order.sort((a, b) => {
-        const leafDifference =
-          Number(metadata[a].group === "leaf") -
-          Number(metadata[b].group === "leaf");
+        const bucket = (id) =>
+          metadata[id].group === "herb"
+            ? 1
+            : metadata[id].group === "leaf"
+              ? 2
+              : 0;
+        const leafDifference = bucket(a) - bucket(b);
         return (
           leafDifference ||
           metadata[b].area - metadata[a].area ||
           profile.selected.indexOf(a) - profile.selected.indexOf(b)
         );
       });
+    if (profile.space === "balcony")
+      order.sort(
+        (a, b) =>
+          Number(metadata[b].group === "herb") -
+          Number(metadata[a].group === "herb"),
+      );
     for (const id of order) {
       const spec = metadata[id];
       const spaces =
         profile.space === "both"
-          ? spec.group === "leaf"
+          ? spec.group === "leaf" || spec.group === "herb"
             ? ["balcony", "garden"]
             : ["garden", "balcony"]
           : [profile.space];
@@ -405,7 +505,11 @@
           continue;
         }
         let tip = space === "balcony" ? `${spec.tip} ${spec.potTip}` : spec.tip;
-        if (setting.sun === "partial" && spec.group !== "leaf")
+        if (
+          setting.sun === "partial" &&
+          ((spec.group !== "leaf" && spec.group !== "herb") ||
+            id === "bazilika")
+        )
           tip +=
             " V polsenci preverite vsaj 4 ure neposrednega sonca; rast in pridelek sta lahko skromnejša.";
         plan.placements.push({
@@ -493,7 +597,7 @@
         );
       }
       if (includesMonth(plant.out)) {
-        if (["paradiznik", "paprika", "por"].includes(id)) {
+        if (["paradiznik", "paprika", "por", "bazilika"].includes(id)) {
           const frost =
             id === "por"
               ? "Sadike pred presajanjem postopoma utrdite."
@@ -502,6 +606,20 @@
             "plantOutside",
             space === "garden" ? "presajanje na gredo" : "presajanje v posodo",
             `Presadite ${destination}. ${frost} ${placement.spacing || metadata[id].spacing}.`,
+          );
+        } else if (["drobnjak", "meta", "timijan", "rozmarin"].includes(id)) {
+          const protection =
+            id === "rozmarin"
+              ? "Izberite toplo, sončno in odcedno mesto ter načrtujte zaščito pred zimskim mrazom."
+              : id === "timijan"
+                ? "Sadite v odcedno zemljo na sončno mesto; izogibajte se zastajanju vode."
+                : id === "meta"
+                  ? "Posadite v lastno posodo ali omejite korenine, da ne preraste drugih rastlin."
+                  : "Posadite kupljeno sadiko ali razdeljen šop v odcedno zemljo.";
+          push(
+            "plantOutside",
+            "sajenje zelišča",
+            `Sadiko posadite ${destination}. ${protection} Termin prilagodite vremenu in utrjenosti sadike.`,
           );
         } else if (id === "cesen") {
           push(
@@ -512,7 +630,7 @@
         } else {
           let condition =
             "Termin prilagodite vremenu, sorti in temperaturi zemlje.";
-          if (id === "fizol" || id === "bucka")
+          if (id === "fizol" || id === "bucka" || id === "bazilika")
             condition =
               "Počakajte na dovolj ogreto zemljo in konec nevarnosti pozebe.";
           push(
@@ -523,10 +641,13 @@
         }
       }
       if (includesMonth(plant.harvest)) {
+        const herb = metadata[id].group === "herb";
         push(
           "harvest",
-          "sezonsko okno pobiranja",
-          "To je okvirno sezonsko okno, ne obljuba že zrelega pridelka. Dejanski čas je odvisen od datuma setve ali sajenja, sorte, kraja in vremena. Pobirajte le dovolj razvite rastline oziroma plodove.",
+          herb ? "sprotno nabiranje zelišč" : "sezonsko okno pobiranja",
+          herb
+            ? "Med aktivno rastjo sproti nabirajte nekaj listov ali mladih vršičkov z dovolj razvitih rastlin in pustite dovolj zelenja za nadaljnjo rast. To je okvirno sezonsko okno; dejanski začetek je odvisen od setve oziroma sajenja, sorte in vremena."
+            : "To je okvirno sezonsko okno, ne obljuba že zrelega pridelka. Dejanski čas je odvisen od datuma setve ali sajenja, sorte, kraja in vremena. Pobirajte le dovolj razvite rastline oziroma plodove.",
         );
       }
     }

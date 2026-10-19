@@ -9,6 +9,7 @@ const {
   normalizeProfile,
   buildPlan,
   getTasks,
+  metadata,
 } = require("../planner-engine.js");
 
 // Keep the real calendar data as the source of truth, without loading the DOM app.
@@ -19,6 +20,14 @@ const plants = JSON.parse(JSON.stringify(vm.runInNewContext(plantLiteral[1])));
 const ids = plants.map((plant) => plant.id);
 const byId = new Map(plants.map((plant) => [plant.id, plant]));
 const fruitIds = ["paradiznik", "paprika", "bucka"];
+const herbIds = [
+  "bazilika",
+  "petersilj",
+  "drobnjak",
+  "meta",
+  "timijan",
+  "rozmarin",
+];
 
 function rawProfile(overrides = {}) {
   return {
@@ -371,4 +380,171 @@ test("invalid months and empty plans return no dated tasks", () => {
     getTasks({ placements: [], excluded: [], notes: [] }, plants, 5),
     [],
   );
+});
+
+test("a small sunny balcony prioritizes selected suitable herbs before vegetables", () => {
+  const profile = normalized({
+    space: "balcony",
+    balcony: { pots: 2, liters: 8, depth: 20, sun: "sun" },
+    // Put vegetables first so selection order cannot accidentally satisfy the test.
+    selected: ["solata", "redkvica", "bazilika", "drobnjak"],
+  });
+  const plan = buildPlan(profile, plants);
+  checkPlan(plan, profile);
+  assert.deepEqual(plan.placements.map((placement) => placement.id).sort(), [
+    "bazilika",
+    "drobnjak",
+  ]);
+  assert.deepEqual(plan.excluded.map((exclusion) => exclusion.id).sort(), [
+    "redkvica",
+    "solata",
+  ]);
+});
+
+test("small herb pots respect their own volume and soil-depth requirements", () => {
+  const smallestProfile = normalized({
+    space: "balcony",
+    balcony: { pots: 6, liters: 3, depth: 15, sun: "sun" },
+    selected: [...herbIds],
+  });
+  const smallestPlan = buildPlan(smallestProfile, plants);
+  checkPlan(smallestPlan, smallestProfile);
+  assert.deepEqual(
+    smallestPlan.placements.map((placement) => placement.id).sort(),
+    ["drobnjak", "timijan"],
+  );
+
+  const smallProfile = normalized({
+    space: "balcony",
+    balcony: { pots: 6, liters: 5, depth: 20, sun: "sun" },
+    selected: [...herbIds],
+  });
+  const smallPlan = buildPlan(smallProfile, plants);
+  checkPlan(smallPlan, smallProfile);
+  assert.deepEqual(
+    smallPlan.placements.map((placement) => placement.id).sort(),
+    ["bazilika", "drobnjak", "petersilj", "timijan"],
+  );
+});
+
+test("partial shade suits parsley and mint but excludes sun-loving thyme and rosemary", () => {
+  const profile = normalized({
+    space: "balcony",
+    balcony: { pots: 4, liters: 15, depth: 40, sun: "partial" },
+    selected: ["petersilj", "meta", "timijan", "rozmarin"],
+  });
+  const plan = buildPlan(profile, plants);
+  checkPlan(plan, profile);
+  assert.deepEqual(plan.placements.map((placement) => placement.id).sort(), [
+    "meta",
+    "petersilj",
+  ]);
+  for (const id of ["timijan", "rozmarin"]) {
+    const exclusion = plan.excluded.find((item) => item.id === id);
+    assert.ok(
+      exclusion,
+      `${id} needs a clear explanation for insufficient light.`,
+    );
+    assert.match(exclusion.reasons.join(" "), /sonc|svetlob|sen[cč]/i);
+  }
+});
+
+test("combined spaces keep herbs on the balcony and large vegetables in the garden", () => {
+  const profile = normalized({
+    space: "both",
+    garden: { area: 4, sun: "sun", previousGroup: "none" },
+    balcony: { pots: 2, liters: 8, depth: 20, sun: "sun" },
+    selected: ["paradiznik", "bucka", "bazilika", "drobnjak"],
+  });
+  const plan = buildPlan(profile, plants);
+  checkPlan(plan, profile);
+  assert.equal(plan.excluded.length, 0);
+  for (const id of ["bazilika", "drobnjak"]) {
+    assert.equal(
+      plan.placements.find((placement) => placement.id === id)?.space,
+      "balcony",
+    );
+  }
+  for (const id of ["paradiznik", "bucka"]) {
+    assert.equal(
+      plan.placements.find((placement) => placement.id === id)?.space,
+      "garden",
+    );
+  }
+});
+
+test("every new herb has usable planning metadata and seasonal calendar tasks", () => {
+  for (const id of herbIds) {
+    assert.ok(byId.has(id), `The calendar is missing ${id}.`);
+    assert.ok(
+      Object.prototype.hasOwnProperty.call(metadata, id),
+      `The engine is missing metadata for ${id}.`,
+    );
+    const spec = metadata[id];
+    assert.ok(Number.isFinite(spec.area) && spec.area > 0);
+    assert.ok(Number.isFinite(spec.minLiters) && spec.minLiters > 0);
+    assert.ok(Number.isFinite(spec.minDepth) && spec.minDepth > 0);
+    assert.ok(typeof spec.group === "string" && spec.group.length > 0);
+    const calendar = byId.get(id);
+    for (const field of ["inside", "out", "harvest"]) {
+      assert.ok(
+        Array.isArray(calendar[field]),
+        `${id} needs ${field} calendar data.`,
+      );
+      assert.ok(
+        calendar[field].every(
+          (month) => Number.isInteger(month) && month >= 1 && month <= 12,
+        ),
+      );
+      assert.equal(new Set(calendar[field]).size, calendar[field].length);
+    }
+  }
+
+  const profile = normalized({
+    space: "balcony",
+    balcony: { pots: 6, liters: 50, depth: 40, sun: "sun" },
+    selected: [...herbIds],
+  });
+  assert.deepEqual(profile.selected, herbIds);
+  const plan = buildPlan(profile, plants);
+  checkPlan(plan, profile);
+  assert.equal(plan.placements.length, herbIds.length);
+  assert.equal(plan.excluded.length, 0);
+
+  const herbsWithTasks = new Set();
+  for (let month = 1; month <= 12; month += 1) {
+    const tasks = getTasks(plan, plants, month);
+    for (const task of tasks) {
+      assert.ok(herbIds.includes(task.id));
+      assert.equal(task.space, "balcony");
+      const calendar = byId.get(task.id);
+      const season =
+        task.type === "sowInside"
+          ? calendar.inside
+          : task.type === "harvest"
+            ? calendar.harvest
+            : calendar.out;
+      assert.ok(
+        season.includes(month),
+        `${task.id}: ${task.type} is outside month ${month}.`,
+      );
+      herbsWithTasks.add(task.id);
+    }
+    for (const id of herbIds) {
+      const calendar = byId.get(id);
+      const cropTasks = tasks.filter((task) => task.id === id);
+      if (calendar.inside.includes(month))
+        assert.ok(cropTasks.some((task) => task.type === "sowInside"));
+      if (calendar.out.includes(month))
+        assert.ok(
+          cropTasks.some(
+            (task) =>
+              task.type === "sowOutside" || task.type === "plantOutside",
+          ),
+        );
+      if (calendar.harvest.includes(month))
+        assert.ok(cropTasks.some((task) => task.type === "harvest"));
+    }
+  }
+  assert.deepEqual([...herbsWithTasks].sort(), [...herbIds].sort());
 });
