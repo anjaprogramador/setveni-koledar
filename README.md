@@ -4,6 +4,40 @@ Odziven mesečni vrtnarski vodnik v slovenščini: izbor meseca, filtri opravil,
 iskanje po rastlinah, osnovni vodniki za 12 vrtnin, štirje nasveti in osebni vrt.
 Izbor se shranjuje lokalno v brskalniku, pod ključem `setveni-vrt`.
 
+## Osebni načrtovalnik
+
+Razdelek »Moj načrt« v štirih korakih vpraša po vrtu, balkonu ali obeh,
+uporabni površini gredic oziroma številu, prostornini in globini enakih posod,
+neposrednem soncu in želenih rastlinah. Za vrt je na voljo tudi izbiren osnovni
+opomnik za lansko skupino rastlin.
+
+Načrt dodeli posamezni rastlinski skupini košček grede ali eno posodo; ne
+prekorači vnesenih kapacitet. Izbira »oboje« najprej razporedi zahtevnejše rastline
+na vrt in listnate v posode, kjer pogoji to dopuščajo. Za neprimerne ali
+nedodeljene rastline pojasni omejitve. Pretežno senčna lega ne dobi navidezno
+primernega načrta za zelenjadnice.
+
+Rezultat vsebuje shemo (ni v merilu), količine za začetek, razmike, nego in mesečna
+opravila z označevanjem. Koledar je mogoče omejiti na dejansko dodeljene rastline.
+Načrt lahko uredite, natisnete ali odstranite. Dodajanje načrta ohrani stare
+priljubljene rastline. Odstranitev načrta ne izbriše priljubljenih.
+
+Profil je shranjen pod `setveni-plan`, oznake opravil pod `setveni-plan-opravila`.
+Vse ostane v trenutnem brskalniku. Načrtovalnik deluje tudi brez trajnega
+shranjevanja in takrat pokaže obvestilo. Ni prijave, API-ja ali prenosa teh
+podatkov na strežnik.
+
+Model je v `planner-engine.js`, uporabniški vmesnik v `planner.js` in `planner.css`.
+Površina se rezervira za skupino ene vrste; samodejnih zaporednih posevkov v isto
+posodo ali natančnega večletnega kolobarja model ne računa. Opravila so sezonska
+okna iz koledarja in niso napoved dejanskega datuma pobiranja.
+
+Preizkusi modela brez dodatnih odvisnosti:
+
+```sh
+node --test tests/planner-engine.test.cjs
+```
+
 ## Lokalni zagon
 
 Projekt je statičen in ne potrebuje namestitve odvisnosti ali gradnje:

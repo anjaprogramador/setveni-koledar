@@ -379,6 +379,7 @@ function tags(p) {
     result += '<span class="tag harvest">Pobiranje</span>';
   return result;
 }
+let planPlantIds = null;
 function renderCalendar() {
   document.querySelectorAll("[data-month]").forEach((button) => {
     const selected = Number(button.dataset.month) === month;
@@ -414,7 +415,11 @@ function renderCalendar() {
         ? [...p.out, ...p.inside, ...p.harvest]
         : p[filter === "in" ? "inside" : filter === "out" ? "out" : "harvest"];
     return (
-      activity.includes(month) && p.name.toLocaleLowerCase("sl").includes(query)
+      activity.includes(month) &&
+      p.name.toLocaleLowerCase("sl").includes(query) &&
+      (!document.querySelector("#personal-calendar").checked ||
+        planPlantIds === null ||
+        planPlantIds.has(p.id))
     );
   });
   const countLabel =
@@ -587,6 +592,7 @@ $("#search").addEventListener("input", (event) => {
   renderCalendar();
 });
 $("#this-month").addEventListener("click", () => selectMonth(currentMonth));
+$("#personal-calendar").addEventListener("change", renderCalendar);
 $("#menu-toggle").addEventListener("click", () => {
   const expanded = $("#menu-toggle").getAttribute("aria-expanded") === "true";
   $("#menu-toggle").setAttribute("aria-expanded", String(!expanded));
@@ -660,3 +666,36 @@ document.addEventListener("keydown", (event) => {
 initializeSeason();
 renderCalendar();
 renderGarden();
+
+// The planner shares the existing garden without replacing personal favourites.
+window.CalendarApp = Object.freeze({
+  plants,
+  months,
+  currentMonth,
+  getSaved: () => [...saved],
+  setPlan(ids) {
+    if (planPlantIds === null) $("#personal-calendar").checked = true;
+    planPlantIds = new Set(ids);
+    $("#personal-calendar-label").hidden = false;
+    renderCalendar();
+  },
+  clearPlan() {
+    planPlantIds = null;
+    $("#personal-calendar").checked = false;
+    $("#personal-calendar-label").hidden = true;
+    renderCalendar();
+  },
+  addSaved(ids) {
+    const valid = ids.filter((id) => plants.some((plant) => plant.id === id));
+    saved = [...new Set([...saved, ...valid])];
+    let persisted = true;
+    try {
+      localStorage.setItem("setveni-vrt", JSON.stringify(saved));
+    } catch {
+      persisted = false;
+    }
+    updateSavedButtons();
+    renderGarden();
+    return persisted;
+  },
+});
