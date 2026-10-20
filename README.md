@@ -115,8 +115,11 @@ na celoten vodnik. `?nacrt=zacimbe#nacrt` odpre izbiro začimb in ohrani obstoje
 pogoje; spremembe se shranijo šele ob potrditvi. `?mesec=1..12#koledar` odpre
 izbrani mesec.
 
-`godovi/` ponuja izbor 97 stalnih zapisov s slovenskimi imeni in povezavo na
-izvorni datum iz romcal. Ni popoln uradni slovenski bogoslužni koledar.
+`godovi/` vsebuje 367 zapisov na vseh 366 datumih, vključno z 29. februarjem.
+Ohranjenih je 97 prvotnih zapisov romcal; 270 dopolnitev zapolni manjkajoče dni
+s pomočjo dnevnih seznamov Revije Ognjišče in ene dopolnitve iz romcal.
+Vsak zapis ima svoj vir. To je pregled stalnih godov, ne letni bogoslužni
+koledar s premičnimi praznovanji. Generator in preizkus zavrneta manjkajoč dan.
 `tradition.js` doda filtre mesecev in iskanje brez šumnikov; brez JS so vidni vsi
 zapisi. Podlaga in MIT licenca sta v `content/namedays.json` in
 `content/romcal-LICENSE.txt`. Pregovori in njihove samostojne praktične razlage
@@ -126,3 +129,8 @@ ljudskim datumom in sedanjim majskim godom.
 Izvedene SEO spremembe, dejansko pregledani viri, omejitve Google Trends ter
 postopek za Search Console so v [SEO-REPORT.md](SEO-REPORT.md). Socialna slika
 je lastna tipografska kompozicija projekta v `assets/social-card.png`.
+
+Glavna navigacija ima na začetni strani in vseh vodnikih enake povezave:
+Načrtovalnik, Koledar, Začimbe, Rastline, Godovi in Pregovori. Začetna ohrani
+še gumb Moj vrt. Nasveti ostanejo dostopni v razdelku in nogi začetne strani.
+Na podstraneh je trenutna glavna stran označena z `aria-current="page"`.

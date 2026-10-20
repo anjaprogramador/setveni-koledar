@@ -376,6 +376,16 @@
 .guide-page nav.guide-nav > a:hover {
   text-decoration: underline;
 }
+.guide-page nav.guide-nav > a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+.guide-page nav.guide-nav > a[aria-current="page"] {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
 .guide-page nav.breadcrumbs {
   display: flex;
   position: static;
@@ -771,6 +781,7 @@
     gap: 22px;
   }
   .guide-page nav.guide-nav {
+    flex-wrap: wrap;
     gap: 20px;
     font-size: 12px;
   }
@@ -866,8 +877,9 @@
   }
   .guide-page nav.guide-nav {
     width: 100%;
-    gap: 13px 20px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px 12px;
     font-size: 11px;
   }
   .guide-page .brand {

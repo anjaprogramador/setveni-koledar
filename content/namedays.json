@@ -1,12 +1,33 @@
 {
-  "scope": "Izbor stalnih godov po splošnem rimskem koledarju z evropskimi dopolnili; ni popoln slovenski liturgični koledar.",
+  "scope": "Dnevni izbor stalnih godov pokriva vseh 366 datumov, vključno z 29. februarjem. Praznovanja se lahko v letnem ali krajevnem bogoslužnem koledarju premaknejo.",
   "source": {
-    "name": "romcal",
-    "url": "https://github.com/romcal/romcal",
-    "commit": "812d82caf817946dea07fce94fadd77973834308",
-    "license": "MIT"
+    "name": "Revija Ognjišče in romcal",
+    "url": "https://revija.ognjisce.si/",
+    "checked": "2026-10-20"
   },
+  "sources": [
+    {
+      "name": "Revija Ognjišče",
+      "url": "https://revija.ognjisce.si/",
+      "checked": "2026-10-20"
+    },
+    {
+      "name": "romcal",
+      "url": "https://github.com/romcal/romcal",
+      "commit": "812d82caf817946dea07fce94fadd77973834308",
+      "license": "MIT"
+    }
+  ],
   "entries": [
+    {
+      "month": 1,
+      "day": 1,
+      "saint": "Devica Marija, Božja Mati",
+      "names": [
+        "Marija"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-01-01/"
+    },
     {
       "month": 1,
       "day": 2,
@@ -19,12 +40,96 @@
     },
     {
       "month": 1,
+      "day": 3,
+      "saint": "Sv. Genovefa Pariška",
+      "names": [
+        "Genovefa"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-01-03/"
+    },
+    {
+      "month": 1,
+      "day": 4,
+      "saint": "Sv. Abrunkul",
+      "names": [
+        "Abrunkul"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-01-04/"
+    },
+    {
+      "month": 1,
+      "day": 5,
+      "saint": "Sv. Edvard",
+      "names": [
+        "Edvard"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-01-05/"
+    },
+    {
+      "month": 1,
+      "day": 6,
+      "saint": "Sv. Julijan in Bazilisa",
+      "names": [
+        "Julijan",
+        "Bazilisa"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-01-06/"
+    },
+    {
+      "month": 1,
       "day": 7,
       "saint": "Sv. Rajmund Penjafortski, duhovnik",
       "names": [
         "Rajmund"
       ],
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L39"
+    },
+    {
+      "month": 1,
+      "day": 8,
+      "saint": "Sv. Severin",
+      "names": [
+        "Severin"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-01-08/"
+    },
+    {
+      "month": 1,
+      "day": 9,
+      "saint": "Sv. Andrej Corsini",
+      "names": [
+        "Andrej"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-01-09/"
+    },
+    {
+      "month": 1,
+      "day": 10,
+      "saint": "Sv. Agaton",
+      "names": [
+        "Agaton"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-01-10/"
+    },
+    {
+      "month": 1,
+      "day": 11,
+      "saint": "Sv. Pavlin (II.) Oglejski",
+      "names": [
+        "Pavlin"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-01-11/"
+    },
+    {
+      "month": 1,
+      "day": 12,
+      "saint": "Sv. Alfred (Elred, Aelred)",
+      "names": [
+        "Alfred",
+        "Elred",
+        "Aelred"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-01-12/"
     },
     {
       "month": 1,
@@ -37,12 +142,58 @@
     },
     {
       "month": 1,
+      "day": 14,
+      "saint": "Sv. Dacij",
+      "names": [
+        "Dacij"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-01-14/"
+    },
+    {
+      "month": 1,
+      "day": 15,
+      "saint": "Sv. Pavel iz Teb",
+      "names": [
+        "Pavel"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-01-15/"
+    },
+    {
+      "month": 1,
+      "day": 16,
+      "saint": "Sv. Marcel I.",
+      "names": [
+        "Marcel"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-01-16/"
+    },
+    {
+      "month": 1,
       "day": 17,
       "saint": "Sv. Anton Puščavnik, opat",
       "names": [
         "Anton"
       ],
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L53"
+    },
+    {
+      "month": 1,
+      "day": 18,
+      "saint": "Sv. Marjeta (Margareta) Ogrska",
+      "names": [
+        "Marjeta",
+        "Margareta"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-01-18/"
+    },
+    {
+      "month": 1,
+      "day": 19,
+      "saint": "Sv. Arsenij",
+      "names": [
+        "Arsenij"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-01-19/"
     },
     {
       "month": 1,
@@ -73,12 +224,39 @@
     },
     {
       "month": 1,
+      "day": 22,
+      "saint": "Sv. Vincencij, diakon in mučenec, in njegov škof Valerij",
+      "names": [
+        "Vincencij"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-01-22/"
+    },
+    {
+      "month": 1,
+      "day": 23,
+      "saint": "Sv. Ildefonz",
+      "names": [
+        "Ildefonz"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-01-23/"
+    },
+    {
+      "month": 1,
       "day": 24,
       "saint": "Sv. Frančišek Saleški, škof",
       "names": [
         "Frančišek"
       ],
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L92"
+    },
+    {
+      "month": 1,
+      "day": 25,
+      "saint": "Sv. Ananija iz Damaska",
+      "names": [
+        "Ananija"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-01-25/"
     },
     {
       "month": 1,
@@ -92,12 +270,39 @@
     },
     {
       "month": 1,
+      "day": 27,
+      "saint": "Sv. Angela Merici",
+      "names": [
+        "Angela"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-01-27/"
+    },
+    {
+      "month": 1,
       "day": 28,
       "saint": "Sv. Tomaž Akvinski, duhovnik",
       "names": [
         "Tomaž"
       ],
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L122"
+    },
+    {
+      "month": 1,
+      "day": 29,
+      "saint": "Sv. Julijan Ubogi (Dobri gostitelj)",
+      "names": [
+        "Julijan"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-01-29/"
+    },
+    {
+      "month": 1,
+      "day": 30,
+      "saint": "Sv. Martina",
+      "names": [
+        "Martina"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-01-30/"
     },
     {
       "month": 1,
@@ -110,12 +315,40 @@
     },
     {
       "month": 2,
+      "day": 1,
+      "saint": "Sv. Brigita (Brida)",
+      "names": [
+        "Brigita",
+        "Brida"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-02-01/"
+    },
+    {
+      "month": 2,
+      "day": 2,
+      "saint": "Sv. Kornelij",
+      "names": [
+        "Kornelij"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-02-02/"
+    },
+    {
+      "month": 2,
       "day": 3,
       "saint": "Sv. Blaž, škof in mučenec",
       "names": [
         "Blaž"
       ],
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L145"
+    },
+    {
+      "month": 2,
+      "day": 4,
+      "saint": "Sv. Ivana Valois",
+      "names": [
+        "Ivana"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-02-04/"
     },
     {
       "month": 2,
@@ -128,12 +361,141 @@
     },
     {
       "month": 2,
+      "day": 6,
+      "saint": "Sv. Amand",
+      "names": [
+        "Amand"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-02-06/"
+    },
+    {
+      "month": 2,
+      "day": 7,
+      "saint": "Sv. Egidij od sv. Jožefa",
+      "names": [
+        "Egidij"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-02-07/"
+    },
+    {
+      "month": 2,
+      "day": 8,
+      "saint": "Sv. Hieronim Emiliani",
+      "names": [
+        "Hieronim"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-02-08/"
+    },
+    {
+      "month": 2,
+      "day": 9,
+      "saint": "Sv. Apolonija (Polona)",
+      "names": [
+        "Apolonija",
+        "Polona"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-02-09/"
+    },
+    {
+      "month": 2,
       "day": 10,
       "saint": "Sv. Sholastika, devica",
       "names": [
         "Sholastika"
       ],
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L191"
+    },
+    {
+      "month": 2,
+      "day": 11,
+      "saint": "Sv. Benedikt iz Aniane",
+      "names": [
+        "Benedikt"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-02-11/"
+    },
+    {
+      "month": 2,
+      "day": 12,
+      "saint": "Sv. Evlalija",
+      "names": [
+        "Evlalija"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-02-12/"
+    },
+    {
+      "month": 2,
+      "day": 13,
+      "saint": "Sv. Adolf",
+      "names": [
+        "Adolf"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-02-13/"
+    },
+    {
+      "month": 2,
+      "day": 14,
+      "saint": "Sv. Valentin (Zdravko)",
+      "names": [
+        "Valentin",
+        "Zdravko"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-02-14/"
+    },
+    {
+      "month": 2,
+      "day": 15,
+      "saint": "Sv. Klavdij de la Colombière",
+      "names": [
+        "Klavdij"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-02-15/"
+    },
+    {
+      "month": 2,
+      "day": 16,
+      "saint": "Sv. Julijana",
+      "names": [
+        "Julijana"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-02-16/"
+    },
+    {
+      "month": 2,
+      "day": 17,
+      "saint": "Sv. Avksibij",
+      "names": [
+        "Avksibij"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-02-17/"
+    },
+    {
+      "month": 2,
+      "day": 18,
+      "saint": "Sv. Frančišek Regis Clet",
+      "names": [
+        "Frančišek"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-02-18/"
+    },
+    {
+      "month": 2,
+      "day": 19,
+      "saint": "Sv. Konrad iz Piacenze",
+      "names": [
+        "Konrad"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-02-19/"
+    },
+    {
+      "month": 2,
+      "day": 20,
+      "saint": "Sv. Sadot (Šahdost) in tovariši",
+      "names": [
+        "Sadot",
+        "Šahdost"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-02-20/"
     },
     {
       "month": 2,
@@ -146,12 +508,105 @@
     },
     {
       "month": 2,
+      "day": 22,
+      "saint": "Sv. Atanazij",
+      "names": [
+        "Atanazij"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-02-22/"
+    },
+    {
+      "month": 2,
       "day": 23,
       "saint": "Sv. Polikarp, škof in mučenec",
       "names": [
         "Polikarp"
       ],
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L235"
+    },
+    {
+      "month": 2,
+      "day": 24,
+      "saint": "Sv. Matija (Bogdan)",
+      "names": [
+        "Matija",
+        "Bogdan"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-02-24/"
+    },
+    {
+      "month": 2,
+      "day": 25,
+      "saint": "Sv. Tarazij (Taras)",
+      "names": [
+        "Tarazij",
+        "Taras"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-02-25/"
+    },
+    {
+      "month": 2,
+      "day": 26,
+      "saint": "Sv. Porfirij",
+      "names": [
+        "Porfirij"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-02-26/"
+    },
+    {
+      "month": 2,
+      "day": 27,
+      "saint": "Sv. Gabrijel Possenti (Od Žalostne Matere božje)",
+      "names": [
+        "Gabrijel"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-02-27/"
+    },
+    {
+      "month": 2,
+      "day": 28,
+      "saint": "Sv. Roman",
+      "names": [
+        "Roman"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-02-28/"
+    },
+    {
+      "month": 2,
+      "day": 29,
+      "saint": "Sv. Hilarij",
+      "names": [
+        "Hilarij"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-02-29/"
+    },
+    {
+      "month": 3,
+      "day": 1,
+      "saint": "Sv. Albin (Belko)",
+      "names": [
+        "Albin",
+        "Belko"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-03-01/"
+    },
+    {
+      "month": 3,
+      "day": 2,
+      "saint": "Sv. Neža Praška (Češka)",
+      "names": [
+        "Neža"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-03-02/"
+    },
+    {
+      "month": 3,
+      "day": 3,
+      "saint": "Sv. Kunigunda",
+      "names": [
+        "Kunigunda"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-03-03/"
     },
     {
       "month": 3,
@@ -161,6 +616,26 @@
         "Kazimir"
       ],
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L251"
+    },
+    {
+      "month": 3,
+      "day": 5,
+      "saint": "Sv. Hadrijan in Evbul",
+      "names": [
+        "Hadrijan",
+        "Evbul"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-03-05/"
+    },
+    {
+      "month": 3,
+      "day": 6,
+      "saint": "Sv. Fridolin (Miroslav)",
+      "names": [
+        "Fridolin",
+        "Miroslav"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-03-06/"
     },
     {
       "month": 3,
@@ -192,12 +667,86 @@
     },
     {
       "month": 3,
+      "day": 10,
+      "saint": "Sv. Aleksander",
+      "names": [
+        "Aleksander"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-03-10/"
+    },
+    {
+      "month": 3,
+      "day": 11,
+      "saint": "Sv. Sofronij",
+      "names": [
+        "Sofronij"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-03-11/"
+    },
+    {
+      "month": 3,
+      "day": 12,
+      "saint": "Sv. Bernard",
+      "names": [
+        "Bernard"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-03-12/"
+    },
+    {
+      "month": 3,
+      "day": 13,
+      "saint": "Sv. Leander Seviljski",
+      "names": [
+        "Leander"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-03-13/"
+    },
+    {
+      "month": 3,
+      "day": 14,
+      "saint": "Sv. Matilda (Mehtilda)",
+      "names": [
+        "Matilda",
+        "Mehtilda"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-03-14/"
+    },
+    {
+      "month": 3,
+      "day": 15,
+      "saint": "Sv. Klemen Marija Dvorak (Hofbauer)",
+      "names": [
+        "Klemen"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-03-15/"
+    },
+    {
+      "month": 3,
+      "day": 16,
+      "saint": "Sv. Hilarij in Tacijan",
+      "names": [
+        "Hilarij",
+        "Tacijan"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-03-16/"
+    },
+    {
+      "month": 3,
       "day": 17,
       "saint": "Sv. Patrik, škof",
       "names": [
         "Patrik"
       ],
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L281"
+    },
+    {
+      "month": 3,
+      "day": 18,
+      "saint": "Sv. Ciril Jeruzalemski",
+      "names": [
+        "Ciril"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-03-18/"
     },
     {
       "month": 3,
@@ -210,6 +759,127 @@
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L295"
     },
     {
+      "month": 3,
+      "day": 20,
+      "saint": "Sv. Kutbert",
+      "names": [
+        "Kutbert"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-03-20/"
+    },
+    {
+      "month": 3,
+      "day": 21,
+      "saint": "Sv. Nikolaj iz Flüe",
+      "names": [
+        "Nikolaj"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-03-21/"
+    },
+    {
+      "month": 3,
+      "day": 22,
+      "saint": "Sv. Lea",
+      "names": [
+        "Lea"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-03-22/"
+    },
+    {
+      "month": 3,
+      "day": 23,
+      "saint": "Sv. Jožef Oriol",
+      "names": [
+        "Jožef"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-03-23/"
+    },
+    {
+      "month": 3,
+      "day": 24,
+      "saint": "Sv. Aldemar",
+      "names": [
+        "Aldemar"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-03-24/"
+    },
+    {
+      "month": 3,
+      "day": 25,
+      "saint": "Sv. Dizma",
+      "names": [
+        "Dizma"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-03-25/"
+    },
+    {
+      "month": 3,
+      "day": 26,
+      "saint": "Sv. Evgenija",
+      "names": [
+        "Evgenija"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-03-26/"
+    },
+    {
+      "month": 3,
+      "day": 27,
+      "saint": "Sv. Rupert",
+      "names": [
+        "Rupert"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-03-27/"
+    },
+    {
+      "month": 3,
+      "day": 28,
+      "saint": "Sv. Proterij",
+      "names": [
+        "Proterij"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-03-28/"
+    },
+    {
+      "month": 3,
+      "day": 29,
+      "saint": "Sv. Bertold",
+      "names": [
+        "Bertold"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-03-29/"
+    },
+    {
+      "month": 3,
+      "day": 30,
+      "saint": "Sv. Janez Klimak",
+      "names": [
+        "Janez"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-03-30/"
+    },
+    {
+      "month": 3,
+      "day": 31,
+      "saint": "Sv. Modest",
+      "names": [
+        "Modest"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-03-31/"
+    },
+    {
+      "month": 4,
+      "day": 1,
+      "saint": "Sv. Agapa (Ljuba), Hionija (Snežna) in Irena",
+      "names": [
+        "Agapa",
+        "Hionija",
+        "Irena",
+        "Ljuba",
+        "Snežna"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-04-01/"
+    },
+    {
       "month": 4,
       "day": 2,
       "saint": "Sv. Frančišek Paolski, puščavnik",
@@ -217,6 +887,15 @@
         "Frančišek"
       ],
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L331"
+    },
+    {
+      "month": 4,
+      "day": 3,
+      "saint": "Sv. Rihard",
+      "names": [
+        "Rihard"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-04-03/"
     },
     {
       "month": 4,
@@ -229,12 +908,149 @@
     },
     {
       "month": 4,
+      "day": 5,
+      "saint": "Sv. Vincencij Ferreri",
+      "names": [
+        "Vincencij"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-04-05/"
+    },
+    {
+      "month": 4,
+      "day": 6,
+      "saint": "Sv. Irenej",
+      "names": [
+        "Irenej"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-04-06/"
+    },
+    {
+      "month": 4,
+      "day": 7,
+      "saint": "Sv. Albert",
+      "names": [
+        "Albert"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-04-07/"
+    },
+    {
+      "month": 4,
+      "day": 8,
+      "saint": "Sv. Dionizij",
+      "names": [
+        "Dionizij"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-04-08/"
+    },
+    {
+      "month": 4,
+      "day": 9,
+      "saint": "Sv. Valtruda",
+      "names": [
+        "Valtruda"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-04-09/"
+    },
+    {
+      "month": 4,
+      "day": 10,
+      "saint": "Sv. Ezekijel",
+      "names": [
+        "Ezekijel"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-04-10/"
+    },
+    {
+      "month": 4,
       "day": 11,
       "saint": "Sv. Stanislav, škof in mučenec",
       "names": [
         "Stanislav"
       ],
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L359"
+    },
+    {
+      "month": 4,
+      "day": 12,
+      "saint": "Sv. Julij I.",
+      "names": [
+        "Julij"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-04-12/"
+    },
+    {
+      "month": 4,
+      "day": 13,
+      "saint": "Sv. Hermenegild",
+      "names": [
+        "Hermenegild"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-04-13/"
+    },
+    {
+      "month": 4,
+      "day": 14,
+      "saint": "Sv. Lidvina",
+      "names": [
+        "Lidvina"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-04-14/"
+    },
+    {
+      "month": 4,
+      "day": 15,
+      "saint": "Sv. Helena",
+      "names": [
+        "Helena"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-04-15/"
+    },
+    {
+      "month": 4,
+      "day": 16,
+      "saint": "Sv. Bernardka Soubirous",
+      "names": [
+        "Bernardka"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-04-16/"
+    },
+    {
+      "month": 4,
+      "day": 17,
+      "saint": "Sv. Simon (Simeon) Barsabejski in tovariši",
+      "names": [
+        "Simon",
+        "Simeon"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-04-17/"
+    },
+    {
+      "month": 4,
+      "day": 18,
+      "saint": "Sv. Aja",
+      "names": [
+        "Aja"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-04-18/"
+    },
+    {
+      "month": 4,
+      "day": 19,
+      "saint": "Sv. Leon IX.",
+      "names": [
+        "Leon"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-04-19/"
+    },
+    {
+      "month": 4,
+      "day": 20,
+      "saint": "Sv. Teotim (Teo)",
+      "names": [
+        "Teotim",
+        "Teo"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-04-20/"
     },
     {
       "month": 4,
@@ -247,12 +1063,30 @@
     },
     {
       "month": 4,
+      "day": 22,
+      "saint": "Sv. Hugo",
+      "names": [
+        "Hugo"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-04-22/"
+    },
+    {
+      "month": 4,
       "day": 23,
       "saint": "Sv. Jurij, mučenec",
       "names": [
         "Jurij"
       ],
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L382"
+    },
+    {
+      "month": 4,
+      "day": 24,
+      "saint": "Sv. Fidelis iz Sigmaringena",
+      "names": [
+        "Fidelis"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-04-24/"
     },
     {
       "month": 4,
@@ -265,12 +1099,48 @@
     },
     {
       "month": 4,
+      "day": 26,
+      "saint": "Sv. Štefan",
+      "names": [
+        "Štefan"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-04-26/"
+    },
+    {
+      "month": 4,
+      "day": 27,
+      "saint": "Sv. Cita",
+      "names": [
+        "Cita"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-04-27/"
+    },
+    {
+      "month": 4,
+      "day": 28,
+      "saint": "Sv. Peter Chanel",
+      "names": [
+        "Peter"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-04-28/"
+    },
+    {
+      "month": 4,
       "day": 29,
       "saint": "Sv. Katarina Sienska, devica",
       "names": [
         "Katarina"
       ],
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L429"
+    },
+    {
+      "month": 4,
+      "day": 30,
+      "saint": "Sv. Jožef Benedikt Cottolengo",
+      "names": [
+        "Jožef"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-04-30/"
     },
     {
       "month": 5,
@@ -303,12 +1173,95 @@
     },
     {
       "month": 5,
+      "day": 4,
+      "saint": "Sv. Florijan (Cvetko)",
+      "names": [
+        "Florijan",
+        "Cvetko"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-05-04/"
+    },
+    {
+      "month": 5,
+      "day": 5,
+      "saint": "Sv. Gotard (Godehard)",
+      "names": [
+        "Gotard",
+        "Godehard"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-05-05/"
+    },
+    {
+      "month": 5,
+      "day": 6,
+      "saint": "Sv. Dominik Savio",
+      "names": [
+        "Dominik"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-05-06/"
+    },
+    {
+      "month": 5,
+      "day": 7,
+      "saint": "Sv. Anton",
+      "names": [
+        "Anton"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-05-07/"
+    },
+    {
+      "month": 5,
+      "day": 8,
+      "saint": "Sv. Viktor Črni",
+      "names": [
+        "Viktor"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-05-08/"
+    },
+    {
+      "month": 5,
+      "day": 9,
+      "saint": "Sv. Beat",
+      "names": [
+        "Beat"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-05-09/"
+    },
+    {
+      "month": 5,
+      "day": 10,
+      "saint": "Sv. Antonin Firenški",
+      "names": [
+        "Antonin"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-05-10/"
+    },
+    {
+      "month": 5,
+      "day": 11,
+      "saint": "Sv. Mamert",
+      "names": [
+        "Mamert"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-05-11/"
+    },
+    {
+      "month": 5,
       "day": 12,
       "saint": "Sv. Pankracij, mučenec",
       "names": [
         "Pankracij"
       ],
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L483"
+    },
+    {
+      "month": 5,
+      "day": 13,
+      "saint": "Sv. Marija Dominika Mazzarello",
+      "names": [
+        "Marija"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-05-13/"
     },
     {
       "month": 5,
@@ -321,12 +1274,66 @@
     },
     {
       "month": 5,
+      "day": 15,
+      "saint": "Sv. Zofija",
+      "names": [
+        "Zofija"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-05-15/"
+    },
+    {
+      "month": 5,
       "day": 16,
       "saint": "Sv. Janez Nepomuk, duhovnik in mučenec",
       "names": [
         "Janez"
       ],
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/countries/slovenia/index.ts#L12"
+    },
+    {
+      "month": 5,
+      "day": 17,
+      "saint": "Sv. Paskal Baylon",
+      "names": [
+        "Paskal"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-05-17/"
+    },
+    {
+      "month": 5,
+      "day": 18,
+      "saint": "Sv. Janez I.",
+      "names": [
+        "Janez"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-05-18/"
+    },
+    {
+      "month": 5,
+      "day": 19,
+      "saint": "Sv. Krispin",
+      "names": [
+        "Krispin"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-05-19/"
+    },
+    {
+      "month": 5,
+      "day": 20,
+      "saint": "Sv. Bernardin Sienski",
+      "names": [
+        "Bernardin"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-05-20/"
+    },
+    {
+      "month": 5,
+      "day": 21,
+      "saint": "Sv. Krištof Magallanes, duhovnik, in tovariši mučenci",
+      "names": [
+        "Krištof"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L521"
     },
     {
       "month": 5,
@@ -339,12 +1346,84 @@
     },
     {
       "month": 5,
+      "day": 23,
+      "saint": "Sv. Janez Krstnik de Rossi",
+      "names": [
+        "Janez"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-05-23/"
+    },
+    {
+      "month": 5,
+      "day": 24,
+      "saint": "Sv. David Škotski",
+      "names": [
+        "David"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-05-24/"
+    },
+    {
+      "month": 5,
+      "day": 25,
+      "saint": "Sv. Aldhelm",
+      "names": [
+        "Aldhelm"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-05-25/"
+    },
+    {
+      "month": 5,
       "day": 26,
       "saint": "Sv. Filip Neri, duhovnik",
       "names": [
         "Filip"
       ],
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L558"
+    },
+    {
+      "month": 5,
+      "day": 27,
+      "saint": "Sv. Avguštin Canterburyjski",
+      "names": [
+        "Avguštin"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-05-27/"
+    },
+    {
+      "month": 5,
+      "day": 28,
+      "saint": "Sv. German Pariški",
+      "names": [
+        "German"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-05-28/"
+    },
+    {
+      "month": 5,
+      "day": 29,
+      "saint": "Sv. Maksim",
+      "names": [
+        "Maksim"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-05-29/"
+    },
+    {
+      "month": 5,
+      "day": 30,
+      "saint": "Sv. Ivana d’Arc",
+      "names": [
+        "Ivana"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-05-30/"
+    },
+    {
+      "month": 5,
+      "day": 31,
+      "saint": "Sv. Amai",
+      "names": [
+        "Amai"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-05-31/"
     },
     {
       "month": 6,
@@ -357,12 +1436,84 @@
     },
     {
       "month": 6,
+      "day": 2,
+      "saint": "Sv. Erazem",
+      "names": [
+        "Erazem"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-06-02/"
+    },
+    {
+      "month": 6,
+      "day": 3,
+      "saint": "Sv. Karel Lwanga in drugi ugandski mučenci",
+      "names": [
+        "Karel"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-06-03/"
+    },
+    {
+      "month": 6,
+      "day": 4,
+      "saint": "Sv. Frančišek Caracciolo",
+      "names": [
+        "Frančišek"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-06-04/"
+    },
+    {
+      "month": 6,
       "day": 5,
       "saint": "Sv. Bonifacij, škof in mučenec",
       "names": [
         "Bonifacij"
       ],
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L635"
+    },
+    {
+      "month": 6,
+      "day": 6,
+      "saint": "Sv. Norbert Magdeburški",
+      "names": [
+        "Norbert"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-06-06/"
+    },
+    {
+      "month": 6,
+      "day": 7,
+      "saint": "Sv. Robert",
+      "names": [
+        "Robert"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-06-07/"
+    },
+    {
+      "month": 6,
+      "day": 8,
+      "saint": "Sv. Medard",
+      "names": [
+        "Medard"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-06-08/"
+    },
+    {
+      "month": 6,
+      "day": 9,
+      "saint": "Sv. Efrem Sirski",
+      "names": [
+        "Efrem"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-06-09/"
+    },
+    {
+      "month": 6,
+      "day": 10,
+      "saint": "Sv. Cenzurij",
+      "names": [
+        "Cenzurij"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-06-10/"
     },
     {
       "month": 6,
@@ -375,12 +1526,87 @@
     },
     {
       "month": 6,
+      "day": 12,
+      "saint": "Sv. Adelajda (Alejda)",
+      "names": [
+        "Adelajda",
+        "Alejda"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-06-12/"
+    },
+    {
+      "month": 6,
       "day": 13,
       "saint": "Sv. Anton Padovanski, duhovnik",
       "names": [
         "Anton"
       ],
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L665"
+    },
+    {
+      "month": 6,
+      "day": 14,
+      "saint": "Sv. Metodij I.",
+      "names": [
+        "Metodij"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-06-14/"
+    },
+    {
+      "month": 6,
+      "day": 15,
+      "saint": "Sv. Bernard iz Aoste (Mentonski)",
+      "names": [
+        "Bernard"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-06-15/"
+    },
+    {
+      "month": 6,
+      "day": 16,
+      "saint": "Sv. Beno (Benon)",
+      "names": [
+        "Beno",
+        "Benon"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-06-16/"
+    },
+    {
+      "month": 6,
+      "day": 17,
+      "saint": "Sv. Albert Chmielowski",
+      "names": [
+        "Albert"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-06-17/"
+    },
+    {
+      "month": 6,
+      "day": 18,
+      "saint": "Sv. Gregor Janez Barbarigo",
+      "names": [
+        "Gregor"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-06-18/"
+    },
+    {
+      "month": 6,
+      "day": 19,
+      "saint": "Sv. Gervazij in Protazij",
+      "names": [
+        "Gervazij",
+        "Protazij"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-06-19/"
+    },
+    {
+      "month": 6,
+      "day": 20,
+      "saint": "Sv. Adalbert",
+      "names": [
+        "Adalbert"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-06-20/"
     },
     {
       "month": 6,
@@ -393,12 +1619,104 @@
     },
     {
       "month": 6,
+      "day": 22,
+      "saint": "Sv. Ahacij in tovariši",
+      "names": [
+        "Ahacij"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-06-22/"
+    },
+    {
+      "month": 6,
+      "day": 23,
+      "saint": "Sv. Jožef Cafasso",
+      "names": [
+        "Jožef"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-06-23/"
+    },
+    {
+      "month": 6,
+      "day": 24,
+      "saint": "Sv. Janez Krstnik (rojstvo)",
+      "names": [
+        "Janez"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-06-24/"
+    },
+    {
+      "month": 6,
+      "day": 25,
+      "saint": "Sv. Viljem",
+      "names": [
+        "Viljem"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-06-25/"
+    },
+    {
+      "month": 6,
+      "day": 26,
+      "saint": "Sv. Janez in Pavel",
+      "names": [
+        "Janez",
+        "Pavel"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-06-26/"
+    },
+    {
+      "month": 6,
+      "day": 27,
+      "saint": "Sv. Ariald",
+      "names": [
+        "Ariald"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-06-27/"
+    },
+    {
+      "month": 6,
       "day": 28,
       "saint": "Sv. Irenej Lyonski, škof in mučenec",
       "names": [
         "Irenej"
       ],
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L720"
+    },
+    {
+      "month": 6,
+      "day": 29,
+      "saint": "Sv. Peter in Pavel",
+      "names": [
+        "Peter",
+        "Pavel"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-06-29/"
+    },
+    {
+      "month": 6,
+      "day": 30,
+      "saint": "Sv. Oton Bamberški",
+      "names": [
+        "Oton"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-06-30/"
+    },
+    {
+      "month": 7,
+      "day": 1,
+      "saint": "Sv. Estera",
+      "names": [
+        "Estera"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-07-01/"
+    },
+    {
+      "month": 7,
+      "day": 2,
+      "saint": "Sv. Janez Frančišek Regis",
+      "names": [
+        "Janez"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-07-02/"
     },
     {
       "month": 7,
@@ -411,12 +1729,70 @@
     },
     {
       "month": 7,
+      "day": 4,
+      "saint": "Sv. Agej",
+      "names": [
+        "Agej"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-07-04/"
+    },
+    {
+      "month": 7,
+      "day": 5,
+      "saint": "Sv. Ciril in Metod",
+      "names": [
+        "Ciril",
+        "Metod"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-07-05/"
+    },
+    {
+      "month": 7,
       "day": 6,
       "saint": "Sv. Marija Goretti, devica in mučenka",
       "names": [
         "Marija"
       ],
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L769"
+    },
+    {
+      "month": 7,
+      "day": 7,
+      "saint": "Sv. Vilibald",
+      "names": [
+        "Vilibald"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-07-07/"
+    },
+    {
+      "month": 7,
+      "day": 8,
+      "saint": "Sv. Kilijan",
+      "names": [
+        "Kilijan"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-07-08/"
+    },
+    {
+      "month": 7,
+      "day": 9,
+      "saint": "Sv. Hadrijan III.",
+      "names": [
+        "Hadrijan"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-07-09/"
+    },
+    {
+      "month": 7,
+      "day": 10,
+      "saint": "Sv. Amalija (Amalberga, Alma, Ljubica)",
+      "names": [
+        "Amalija",
+        "Amalberga",
+        "Alma",
+        "Ljubica"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-07-10/"
     },
     {
       "month": 7,
@@ -429,12 +1805,96 @@
     },
     {
       "month": 7,
+      "day": 12,
+      "saint": "Sv. Mohor (Hermagora, Hermogenes) in Fortunat",
+      "names": [
+        "Mohor",
+        "Fortunat",
+        "Hermagora",
+        "Hermogenes"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-07-12/"
+    },
+    {
+      "month": 7,
+      "day": 13,
+      "saint": "Sv. Evgenij",
+      "names": [
+        "Evgenij"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-07-13/"
+    },
+    {
+      "month": 7,
+      "day": 14,
+      "saint": "Sv. Frančišek Solan",
+      "names": [
+        "Frančišek"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-07-14/"
+    },
+    {
+      "month": 7,
       "day": 15,
       "saint": "Sv. Bonaventura, škof",
       "names": [
         "Bonaventura"
       ],
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L807"
+    },
+    {
+      "month": 7,
+      "day": 16,
+      "saint": "Sv. Antioh",
+      "names": [
+        "Antioh"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-07-16/"
+    },
+    {
+      "month": 7,
+      "day": 17,
+      "saint": "Sv. Aleš",
+      "names": [
+        "Aleš"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-07-17/"
+    },
+    {
+      "month": 7,
+      "day": 18,
+      "saint": "Sv. Friderik",
+      "names": [
+        "Friderik"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-07-18/"
+    },
+    {
+      "month": 7,
+      "day": 19,
+      "saint": "Sv. Arsenij Veliki",
+      "names": [
+        "Arsenij"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-07-19/"
+    },
+    {
+      "month": 7,
+      "day": 20,
+      "saint": "Sv. Elija Tesban",
+      "names": [
+        "Elija"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-07-20/"
+    },
+    {
+      "month": 7,
+      "day": 21,
+      "saint": "Sv. Danijel",
+      "names": [
+        "Danijel"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-07-21/"
     },
     {
       "month": 7,
@@ -454,6 +1914,15 @@
         "Brigita"
       ],
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L843"
+    },
+    {
+      "month": 7,
+      "day": 24,
+      "saint": "Sv. Kristina iz Bolsene",
+      "names": [
+        "Kristina"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-07-24/"
     },
     {
       "month": 7,
@@ -477,6 +1946,28 @@
     },
     {
       "month": 7,
+      "day": 27,
+      "saint": "Sv. Gorazd, Naum, Angelar, Sava, Kliment Ohridski in drugi učenci sv. Cirila in Metoda",
+      "names": [
+        "Gorazd",
+        "Naum",
+        "Angelar",
+        "Sava",
+        "Kliment"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-07-27/"
+    },
+    {
+      "month": 7,
+      "day": 28,
+      "saint": "Sv. Samson",
+      "names": [
+        "Samson"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-07-28/"
+    },
+    {
+      "month": 7,
       "day": 29,
       "saint": "Sv. Marta, Marija in Lazar iz Betanije",
       "names": [
@@ -485,6 +1976,15 @@
         "Lazar"
       ],
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L874"
+    },
+    {
+      "month": 7,
+      "day": 30,
+      "saint": "Sv. Peter Krizolog",
+      "names": [
+        "Peter"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-07-30/"
     },
     {
       "month": 7,
@@ -506,12 +2006,58 @@
     },
     {
       "month": 8,
+      "day": 2,
+      "saint": "Sv. Evzebij",
+      "names": [
+        "Evzebij"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-08-02/"
+    },
+    {
+      "month": 8,
+      "day": 3,
+      "saint": "Sv. Lidija",
+      "names": [
+        "Lidija"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-08-03/"
+    },
+    {
+      "month": 8,
       "day": 4,
       "saint": "Sv. Janez Marija Vianej, duhovnik",
       "names": [
         "Janez"
       ],
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L917"
+    },
+    {
+      "month": 8,
+      "day": 5,
+      "saint": "Sv. Ožbolt (Osvald)",
+      "names": [
+        "Ožbolt",
+        "Osvald"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-08-05/"
+    },
+    {
+      "month": 8,
+      "day": 6,
+      "saint": "Sv. Hormizd",
+      "names": [
+        "Hormizd"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-08-06/"
+    },
+    {
+      "month": 8,
+      "day": 7,
+      "saint": "Sv. Kajetan Tienski",
+      "names": [
+        "Kajetan"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-08-07/"
     },
     {
       "month": 8,
@@ -551,12 +2097,77 @@
     },
     {
       "month": 8,
+      "day": 12,
+      "saint": "Sv. Anicet in Fotij",
+      "names": [
+        "Anicet",
+        "Fotij"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-08-12/"
+    },
+    {
+      "month": 8,
+      "day": 13,
+      "saint": "Sv. Poncijan in Hipolit",
+      "names": [
+        "Poncijan",
+        "Hipolit"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-08-13/"
+    },
+    {
+      "month": 8,
       "day": 14,
       "saint": "Sv. Maksimilijan Marija Kolbe, duhovnik in mučenec",
       "names": [
         "Maksimilijan"
       ],
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1002"
+    },
+    {
+      "month": 8,
+      "day": 15,
+      "saint": "Sv. Alfrid",
+      "names": [
+        "Alfrid"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-08-15/"
+    },
+    {
+      "month": 8,
+      "day": 16,
+      "saint": "Sv. Rok",
+      "names": [
+        "Rok"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-08-16/"
+    },
+    {
+      "month": 8,
+      "day": 17,
+      "saint": "Sv. Hijacint",
+      "names": [
+        "Hijacint"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-08-17/"
+    },
+    {
+      "month": 8,
+      "day": 18,
+      "saint": "Sv. Helena",
+      "names": [
+        "Helena"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-08-18/"
+    },
+    {
+      "month": 8,
+      "day": 19,
+      "saint": "Sv. Janez Eudes",
+      "names": [
+        "Janez"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-08-19/"
     },
     {
       "month": 8,
@@ -569,12 +2180,57 @@
     },
     {
       "month": 8,
+      "day": 21,
+      "saint": "Sv. Pij X.",
+      "names": [
+        "Pij"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-08-21/"
+    },
+    {
+      "month": 8,
+      "day": 22,
+      "saint": "Sv. Aldoald",
+      "names": [
+        "Aldoald"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-08-22/"
+    },
+    {
+      "month": 8,
+      "day": 23,
+      "saint": "Sv. Roza iz Lime",
+      "names": [
+        "Roza"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-08-23/"
+    },
+    {
+      "month": 8,
       "day": 24,
       "saint": "Sv. Jernej, apostol",
       "names": [
         "Jernej"
       ],
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1062"
+    },
+    {
+      "month": 8,
+      "day": 25,
+      "saint": "Sv. Ludvik IX.",
+      "names": [
+        "Ludvik"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-08-25/"
+    },
+    {
+      "month": 8,
+      "day": 26,
+      "saint": "Sv. Ivana Elizabeta Bichier Des Ages",
+      "names": [
+        "Ivana"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-08-26/"
     },
     {
       "month": 8,
@@ -595,6 +2251,54 @@
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1091"
     },
     {
+      "month": 8,
+      "day": 29,
+      "saint": "Sv. Janez Krstnik (mučeništvo)",
+      "names": [
+        "Janez"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-08-29/"
+    },
+    {
+      "month": 8,
+      "day": 30,
+      "saint": "Sv. Feliks in Adavkt",
+      "names": [
+        "Feliks",
+        "Adavkt"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-08-30/"
+    },
+    {
+      "month": 8,
+      "day": 31,
+      "saint": "Sv. Rajmund Nonnat (Nerojeni)",
+      "names": [
+        "Rajmund"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-08-31/"
+    },
+    {
+      "month": 9,
+      "day": 1,
+      "saint": "Sv. Tilen (Egidij, Ilj)",
+      "names": [
+        "Tilen",
+        "Egidij",
+        "Ilj"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-09-01/"
+    },
+    {
+      "month": 9,
+      "day": 2,
+      "saint": "Sv. Marjeta",
+      "names": [
+        "Marjeta"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-09-02/"
+    },
+    {
       "month": 9,
       "day": 3,
       "saint": "Sv. Gregor Veliki, papež",
@@ -602,6 +2306,15 @@
         "Gregor"
       ],
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1108"
+    },
+    {
+      "month": 9,
+      "day": 4,
+      "saint": "Sv. Rozalija iz Palerma",
+      "names": [
+        "Rozalija"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-09-04/"
     },
     {
       "month": 9,
@@ -614,12 +2327,106 @@
     },
     {
       "month": 9,
+      "day": 6,
+      "saint": "Sv. Zaharija",
+      "names": [
+        "Zaharija"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-09-06/"
+    },
+    {
+      "month": 9,
+      "day": 7,
+      "saint": "Sv. Marko Križevčan, Štefan Pongrac in Melhior Grodecki",
+      "names": [
+        "Marko",
+        "Štefan",
+        "Melhior"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-09-07/"
+    },
+    {
+      "month": 9,
+      "day": 8,
+      "saint": "Sv. Izak",
+      "names": [
+        "Izak"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-09-08/"
+    },
+    {
+      "month": 9,
+      "day": 9,
+      "saint": "Sv. Peter Klaver",
+      "names": [
+        "Peter"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-09-09/"
+    },
+    {
+      "month": 9,
+      "day": 10,
+      "saint": "Sv. Nikolaj Tolentinski",
+      "names": [
+        "Nikolaj"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-09-10/"
+    },
+    {
+      "month": 9,
+      "day": 11,
+      "saint": "Sv. Prot in Hijacint",
+      "names": [
+        "Prot",
+        "Hijacint"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-09-11/"
+    },
+    {
+      "month": 9,
       "day": 12,
       "saint": "Devica Marija – praznovanje Marijinega imena",
       "names": [
         "Marija"
       ],
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1137"
+    },
+    {
+      "month": 9,
+      "day": 13,
+      "saint": "Sv. Janez Zlatousti (Krizostom)",
+      "names": [
+        "Janez",
+        "Krizostom"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-09-13/"
+    },
+    {
+      "month": 9,
+      "day": 14,
+      "saint": "Sv. Albert Jeruzalemski",
+      "names": [
+        "Albert"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-09-14/"
+    },
+    {
+      "month": 9,
+      "day": 15,
+      "saint": "Sv. Aihard",
+      "names": [
+        "Aihard"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-09-15/"
+    },
+    {
+      "month": 9,
+      "day": 16,
+      "saint": "Sv. Ljudmila",
+      "names": [
+        "Ljudmila"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-09-16/"
     },
     {
       "month": 9,
@@ -632,12 +2439,76 @@
     },
     {
       "month": 9,
+      "day": 18,
+      "saint": "Sv. Jožef Kupertinski",
+      "names": [
+        "Jožef"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-09-18/"
+    },
+    {
+      "month": 9,
+      "day": 19,
+      "saint": "Sv. Januarij in tovariši",
+      "names": [
+        "Januarij"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-09-19/"
+    },
+    {
+      "month": 9,
+      "day": 20,
+      "saint": "Sv. Evstahij (Evstatij)",
+      "names": [
+        "Evstahij",
+        "Evstatij"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-09-20/"
+    },
+    {
+      "month": 9,
       "day": 21,
       "saint": "Sv. Matej, apostol in evangelist",
       "names": [
         "Matej"
       ],
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1208"
+    },
+    {
+      "month": 9,
+      "day": 22,
+      "saint": "Sv. Mavricij in tovariši",
+      "names": [
+        "Mavricij"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-09-22/"
+    },
+    {
+      "month": 9,
+      "day": 23,
+      "saint": "Sv. Pij iz Pietralcine",
+      "names": [
+        "Pij"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-09-23/"
+    },
+    {
+      "month": 9,
+      "day": 24,
+      "saint": "Sv. Anatolon",
+      "names": [
+        "Anatolon"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-09-24/"
+    },
+    {
+      "month": 9,
+      "day": 25,
+      "saint": "Sv. Sergij Radoneški",
+      "names": [
+        "Sergij"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-09-25/"
     },
     {
       "month": 9,
@@ -657,6 +2528,16 @@
         "Vincencij"
       ],
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1232"
+    },
+    {
+      "month": 9,
+      "day": 28,
+      "saint": "Sv. Venčeslav (Vaclav)",
+      "names": [
+        "Venčeslav",
+        "Vaclav"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-09-28/"
     },
     {
       "month": 9,
@@ -689,6 +2570,25 @@
     },
     {
       "month": 10,
+      "day": 2,
+      "saint": "Sv. Leodegar (Leger)",
+      "names": [
+        "Leodegar",
+        "Leger"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-10-02/"
+    },
+    {
+      "month": 10,
+      "day": 3,
+      "saint": "Sv. Evald",
+      "names": [
+        "Evald"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-10-03/"
+    },
+    {
+      "month": 10,
       "day": 4,
       "saint": "Sv. Frančišek Asiški",
       "names": [
@@ -716,12 +2616,96 @@
     },
     {
       "month": 10,
+      "day": 7,
+      "saint": "Sv. Adalgiz",
+      "names": [
+        "Adalgiz"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-10-07/"
+    },
+    {
+      "month": 10,
+      "day": 8,
+      "saint": "Sv. Pelagija",
+      "names": [
+        "Pelagija"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-10-08/"
+    },
+    {
+      "month": 10,
+      "day": 9,
+      "saint": "Sv. Dionizij, Rustik in Elevterij",
+      "names": [
+        "Dionizij",
+        "Rustik",
+        "Elevterij"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-10-09/"
+    },
+    {
+      "month": 10,
+      "day": 10,
+      "saint": "Sv. Daniel Comboni",
+      "names": [
+        "Daniel"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-10-10/"
+    },
+    {
+      "month": 10,
+      "day": 11,
+      "saint": "Sv. Filip",
+      "names": [
+        "Filip"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-10-11/"
+    },
+    {
+      "month": 10,
+      "day": 12,
+      "saint": "Sv. Maksimilijan Celjski",
+      "names": [
+        "Maksimilijan"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-10-12/"
+    },
+    {
+      "month": 10,
+      "day": 13,
+      "saint": "Sv. Gerald iz Aurillaca",
+      "names": [
+        "Gerald"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-10-13/"
+    },
+    {
+      "month": 10,
+      "day": 14,
+      "saint": "Sv. Kalist I.",
+      "names": [
+        "Kalist"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-10-14/"
+    },
+    {
+      "month": 10,
       "day": 15,
       "saint": "Sv. Terezija Avilska, devica",
       "names": [
         "Terezija"
       ],
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1354"
+    },
+    {
+      "month": 10,
+      "day": 16,
+      "saint": "Sv. Jadviga (Hedvika)",
+      "names": [
+        "Jadviga",
+        "Hedvika"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-10-16/"
     },
     {
       "month": 10,
@@ -743,12 +2727,88 @@
     },
     {
       "month": 10,
+      "day": 19,
+      "saint": "Sv. Akvilin",
+      "names": [
+        "Akvilin"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-10-19/"
+    },
+    {
+      "month": 10,
+      "day": 20,
+      "saint": "Sv. Irena (Iria)",
+      "names": [
+        "Irena",
+        "Iria"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-10-20/"
+    },
+    {
+      "month": 10,
+      "day": 21,
+      "saint": "Sv. Uršula",
+      "names": [
+        "Uršula"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-10-21/"
+    },
+    {
+      "month": 10,
       "day": 22,
       "saint": "Sv. Janez Pavel II., papež",
       "names": [
         "Janez Pavel"
       ],
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1408"
+    },
+    {
+      "month": 10,
+      "day": 23,
+      "saint": "Sv. Ignacij Carigrajski",
+      "names": [
+        "Ignacij"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-10-23/"
+    },
+    {
+      "month": 10,
+      "day": 24,
+      "saint": "Sv. Anton Marija Claret",
+      "names": [
+        "Anton"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-10-24/"
+    },
+    {
+      "month": 10,
+      "day": 25,
+      "saint": "Sv. Krišpin in Krišpinijan",
+      "names": [
+        "Krišpin",
+        "Krišpinijan"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-10-25/"
+    },
+    {
+      "month": 10,
+      "day": 26,
+      "saint": "Sv. Demetrij Solunski",
+      "names": [
+        "Demetrij"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-10-26/"
+    },
+    {
+      "month": 10,
+      "day": 27,
+      "saint": "Sv. Vincenc, Sabina in Kristeta",
+      "names": [
+        "Vincenc",
+        "Sabina",
+        "Kristeta"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-10-27/"
     },
     {
       "month": 10,
@@ -762,6 +2822,61 @@
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1429"
     },
     {
+      "month": 10,
+      "day": 29,
+      "saint": "Sv. Narcis",
+      "names": [
+        "Narcis"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-10-29/"
+    },
+    {
+      "month": 10,
+      "day": 30,
+      "saint": "Sv. Marcel",
+      "names": [
+        "Marcel"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-10-30/"
+    },
+    {
+      "month": 10,
+      "day": 31,
+      "saint": "Sv. Volbenk (Bolfenk)",
+      "names": [
+        "Volbenk",
+        "Bolfenk"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-10-31/"
+    },
+    {
+      "month": 11,
+      "day": 1,
+      "saint": "Sv. Austremonij",
+      "names": [
+        "Austremonij"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-11-01/"
+    },
+    {
+      "month": 11,
+      "day": 2,
+      "saint": "Sv. Acindin in tovariši",
+      "names": [
+        "Acindin"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-11-02/"
+    },
+    {
+      "month": 11,
+      "day": 3,
+      "saint": "Sv. Viktorin Ptujski",
+      "names": [
+        "Viktorin"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-11-03/"
+    },
+    {
       "month": 11,
       "day": 4,
       "saint": "Sv. Karel Boromejski, škof",
@@ -769,6 +2884,63 @@
         "Karel"
       ],
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1463"
+    },
+    {
+      "month": 11,
+      "day": 5,
+      "saint": "Sv. Elizabeta in Zaharija",
+      "names": [
+        "Elizabeta",
+        "Zaharija"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-11-05/"
+    },
+    {
+      "month": 11,
+      "day": 6,
+      "saint": "Sv. Lenart",
+      "names": [
+        "Lenart"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-11-06/"
+    },
+    {
+      "month": 11,
+      "day": 7,
+      "saint": "Sv. Ernest",
+      "names": [
+        "Ernest"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-11-07/"
+    },
+    {
+      "month": 11,
+      "day": 8,
+      "saint": "Sv. Bogomir (Gotfrid)",
+      "names": [
+        "Bogomir",
+        "Gotfrid"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-11-08/"
+    },
+    {
+      "month": 11,
+      "day": 9,
+      "saint": "Sv. Teodor (Božidar)",
+      "names": [
+        "Teodor",
+        "Božidar"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-11-09/"
+    },
+    {
+      "month": 11,
+      "day": 10,
+      "saint": "Sv. Leon Veliki",
+      "names": [
+        "Leon"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-11-10/"
     },
     {
       "month": 11,
@@ -781,12 +2953,48 @@
     },
     {
       "month": 11,
+      "day": 12,
+      "saint": "Sv. Jozafat Kunčevič",
+      "names": [
+        "Jozafat"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-11-12/"
+    },
+    {
+      "month": 11,
+      "day": 13,
+      "saint": "Sv. Stanislav Kostka",
+      "names": [
+        "Stanislav"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-11-13/"
+    },
+    {
+      "month": 11,
+      "day": 14,
+      "saint": "Sv. Nikolaj Tavelić in tovariši",
+      "names": [
+        "Nikolaj"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-11-14/"
+    },
+    {
+      "month": 11,
       "day": 15,
       "saint": "Sv. Albert Veliki, škof",
       "names": [
         "Albert"
       ],
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1499"
+    },
+    {
+      "month": 11,
+      "day": 16,
+      "saint": "Sv. Marjeta Škotska",
+      "names": [
+        "Marjeta"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-11-16/"
     },
     {
       "month": 11,
@@ -799,12 +3007,67 @@
     },
     {
       "month": 11,
+      "day": 18,
+      "saint": "Sv. Odo Clunyjski",
+      "names": [
+        "Odo"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-11-18/"
+    },
+    {
+      "month": 11,
+      "day": 19,
+      "saint": "Sv. Matilda (Mehtilda) iz Hackeborna",
+      "names": [
+        "Matilda",
+        "Mehtilda"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-11-19/"
+    },
+    {
+      "month": 11,
+      "day": 20,
+      "saint": "Sv. Edmund",
+      "names": [
+        "Edmund"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-11-20/"
+    },
+    {
+      "month": 11,
+      "day": 21,
+      "saint": "Sv. Maver",
+      "names": [
+        "Maver"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-11-21/"
+    },
+    {
+      "month": 11,
       "day": 22,
       "saint": "Sv. Cecilija, devica in mučenka",
       "names": [
         "Cecilija"
       ],
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1541"
+    },
+    {
+      "month": 11,
+      "day": 23,
+      "saint": "Sv. Klemen Rimski",
+      "names": [
+        "Klemen"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-11-23/"
+    },
+    {
+      "month": 11,
+      "day": 24,
+      "saint": "Sv. Andrej Dung-Lac in tovariši",
+      "names": [
+        "Andrej"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-11-24/"
     },
     {
       "month": 11,
@@ -817,6 +3080,42 @@
     },
     {
       "month": 11,
+      "day": 26,
+      "saint": "Sv. Leonard Portomavriški",
+      "names": [
+        "Leonard"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-11-26/"
+    },
+    {
+      "month": 11,
+      "day": 27,
+      "saint": "Sv. Virgil",
+      "names": [
+        "Virgil"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-11-27/"
+    },
+    {
+      "month": 11,
+      "day": 28,
+      "saint": "Sv. Katarina Laboure",
+      "names": [
+        "Katarina"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-11-28/"
+    },
+    {
+      "month": 11,
+      "day": 29,
+      "saint": "Sv. Saturnin",
+      "names": [
+        "Saturnin"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-11-29/"
+    },
+    {
+      "month": 11,
       "day": 30,
       "saint": "Sv. Andrej, apostol",
       "names": [
@@ -826,12 +3125,50 @@
     },
     {
       "month": 12,
+      "day": 1,
+      "saint": "Sv. Agerik",
+      "names": [
+        "Agerik"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-12-01/"
+    },
+    {
+      "month": 12,
+      "day": 2,
+      "saint": "Sv. Bibijana (Vivijana)",
+      "names": [
+        "Bibijana",
+        "Vivijana"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-12-02/"
+    },
+    {
+      "month": 12,
       "day": 3,
       "saint": "Sv. Frančišek Ksaverij, duhovnik",
       "names": [
         "Frančišek Ksaverij"
       ],
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1589"
+    },
+    {
+      "month": 12,
+      "day": 4,
+      "saint": "Sv. Barbara",
+      "names": [
+        "Barbara"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-12-04/"
+    },
+    {
+      "month": 12,
+      "day": 5,
+      "saint": "Sv. Saba (Sava) iz Mar Sabe",
+      "names": [
+        "Saba",
+        "Sava"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-12-05/"
     },
     {
       "month": 12,
@@ -854,6 +3191,52 @@
     },
     {
       "month": 12,
+      "day": 8,
+      "saint": "Sv. Elfrida",
+      "names": [
+        "Elfrida"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-12-08/"
+    },
+    {
+      "month": 12,
+      "day": 9,
+      "saint": "Sv. Peter (Pierre) Fourier",
+      "names": [
+        "Peter",
+        "Pierre"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-12-09/"
+    },
+    {
+      "month": 12,
+      "day": 10,
+      "saint": "Sv. Evlalija",
+      "names": [
+        "Evlalija"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-12-10/"
+    },
+    {
+      "month": 12,
+      "day": 11,
+      "saint": "Sv. Damaz I.",
+      "names": [
+        "Damaz"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-12-11/"
+    },
+    {
+      "month": 12,
+      "day": 12,
+      "saint": "Sv. Ivana Frančiška Fremyot de Chantal (Šantalska)",
+      "names": [
+        "Ivana"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-12-12/"
+    },
+    {
+      "month": 12,
       "day": 13,
       "saint": "Sv. Lucija, devica in mučenka",
       "names": [
@@ -872,6 +3255,106 @@
     },
     {
       "month": 12,
+      "day": 15,
+      "saint": "Sv. Marija od Križa di Rosa",
+      "names": [
+        "Marija"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-12-15/"
+    },
+    {
+      "month": 12,
+      "day": 16,
+      "saint": "Sv. Adelajda",
+      "names": [
+        "Adelajda"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-12-16/"
+    },
+    {
+      "month": 12,
+      "day": 17,
+      "saint": "Sv. Lazar iz Betanije",
+      "names": [
+        "Lazar"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-12-17/"
+    },
+    {
+      "month": 12,
+      "day": 18,
+      "saint": "Sv. Vunibald",
+      "names": [
+        "Vunibald"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-12-18/"
+    },
+    {
+      "month": 12,
+      "day": 19,
+      "saint": "Sv. Urban V.",
+      "names": [
+        "Urban"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-12-19/"
+    },
+    {
+      "month": 12,
+      "day": 20,
+      "saint": "Sv. Vincencij Romano",
+      "names": [
+        "Vincencij"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-12-20/"
+    },
+    {
+      "month": 12,
+      "day": 21,
+      "saint": "Sv. Peter Kanizij",
+      "names": [
+        "Peter"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-12-21/"
+    },
+    {
+      "month": 12,
+      "day": 22,
+      "saint": "Sv. Frančiška Ksaverija Cabrini",
+      "names": [
+        "Frančiška"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-12-22/"
+    },
+    {
+      "month": 12,
+      "day": 23,
+      "saint": "Sv. Janez Kancij (Kentski)",
+      "names": [
+        "Janez"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-12-23/"
+    },
+    {
+      "month": 12,
+      "day": 24,
+      "saint": "Sv. Adam in Eva",
+      "names": [
+        "Adam",
+        "Eva"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-12-24/"
+    },
+    {
+      "month": 12,
+      "day": 25,
+      "saint": "Sv. Anastazija",
+      "names": [
+        "Anastazija"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-12-25/"
+    },
+    {
+      "month": 12,
       "day": 26,
       "saint": "Sv. Štefan, prvi mučenec",
       "names": [
@@ -887,6 +3370,33 @@
         "Janez"
       ],
       "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1693"
+    },
+    {
+      "month": 12,
+      "day": 28,
+      "saint": "Sv. Anton",
+      "names": [
+        "Anton"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-12-28/"
+    },
+    {
+      "month": 12,
+      "day": 29,
+      "saint": "Sv. Tomaž Becket",
+      "names": [
+        "Tomaž"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-12-29/"
+    },
+    {
+      "month": 12,
+      "day": 30,
+      "saint": "Sv. Feliks I.",
+      "names": [
+        "Feliks"
+      ],
+      "source": "https://revija.ognjisce.si/svetnik-seznam-12-30/"
     },
     {
       "month": 12,

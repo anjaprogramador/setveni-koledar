@@ -123,3 +123,24 @@ mesečnih gumbov ostaja; na balkonski strani ni opozoril za dostopnost.
 Vsebina potrebuje nadaljnje uredniško dopolnjevanje, lastne izkušnje in po
 možnosti vrtnarski pregled. Novi besedili ne predstavljata strokovne recenzije.
 Koledar je okviren za osrednjo Slovenijo in ne vsebuje dnevnega luninega izračuna.
+
+
+## Dopolnitev dnevnih godov in menija · 20. oktober 2026
+
+Ognjišče je bilo pri ponovnem preverjanju neposredno dostopno. Iz javnih
+[dnevnih seznamov](https://revija.ognjisce.si/svetnik-seznam-10-20/) smo uporabili
+imena in datumska dejstva, brez prepisovanja življenjepisov. Prvotnih 97 zapisov
+romcal je ohranjenih; dodanih je 270 zapisov za manjkajoče datume, od tega 269
+iz Ognjišča in 21. maj iz pripetega romcal. Skupaj 367 zapisov pokriva vseh
+366 datumov, tudi 29. februar. Vsak zapis navaja svoj vir. To ne pomeni, da
+je na vsak dan naveden prav vsak svetnik ali da računamo letne liturgične prestavitve.
+
+Dve nepravilnosti v uvrstitvah izvornih člankov sta bili preverjeni posebej.
+12. oktober je v drugi kategoriji vira. Podvojena objava za 29. maj ni bila
+samovoljno uporabljena za manjkajoči 21. maj; ta datum je dopolnjen iz romcal.
+Zapis prenosa in zgoščene vrednosti virov so v `content/namedays-sources.json`.
+Generator in preizkus zdaj zahtevata pokritost vsakega od 366 datumov.
+
+Enotna zgornja navigacija vseh strani vsebuje tudi Godove in Pregovore.
+Mobilni meni ima popravljeno širino pri320 px, povezave pa imajo vsaj44 px
+visoke površine za dotik. Obstoječi načrti in priljubljene rastline se ne spreminjajo.

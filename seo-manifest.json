@@ -177,7 +177,7 @@
   {
     "route": "godovi/",
     "title": "Godovi slovenskih imen: koledar svetnikov po mesecih",
-    "description": "Koledar izbranih godov slovenskih imen po svetnikih. Poiščite ime, preverite datum godu ter preberite razliko med godom in rojstnim dnem."
+    "description": "Godovi slovenskih imen za vsak dan v letu: poiščite ime, izberite mesec in preverite svetnika ter datum godu. Vključeni so viri in 29. februar."
   },
   {
     "route": "ljudske-modrosti/",

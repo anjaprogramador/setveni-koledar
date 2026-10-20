@@ -1,0 +1,41 @@
+{
+  "checked": "2026-10-20",
+  "rawSources": [
+    {
+      "sha256": "b2b6ca1774998221ac0cf8e874a0776b0f2201a182685de9c308c20cb9352b8d",
+      "url": "https://revija.ognjisce.si/wp-json/wp/v2/posts?categories=135&per_page=100&page=1&orderby=id&order=asc&_fields=id,slug,title,content,link,categories"
+    },
+    {
+      "sha256": "15e1c2c1a4d99e00b4f6e098aa1590238804a472db19d1252de65bfa4a24b7d7",
+      "url": "https://revija.ognjisce.si/wp-json/wp/v2/posts?categories=135&per_page=100&page=2&orderby=id&order=asc&_fields=id,slug,title,content,link,categories"
+    },
+    {
+      "sha256": "1b2ab71d1b918f75cb62a69299aee700bcc5660d6d81713db54e5bcda1efdb4c",
+      "url": "https://revija.ognjisce.si/wp-json/wp/v2/posts?categories=135&per_page=100&page=3&orderby=id&order=asc&_fields=id,slug,title,content,link,categories"
+    },
+    {
+      "sha256": "489c55f7056bd60ddb64396cc665688478e00d9d1c03c1cd93ca859deb17e87c",
+      "url": "https://revija.ognjisce.si/wp-json/wp/v2/posts?categories=135&per_page=100&page=4&orderby=id&order=asc&_fields=id,slug,title,content,link,categories"
+    },
+    {
+      "sha256": "466f8cf3e07b02da9afdad79fc43a1fae2aa7d3be1e3d0a8fd86b5e97bc37cd6",
+      "url": "https://revija.ognjisce.si/wp-json/wp/v2/posts?slug=svetnik-seznam-05-21,svetnik-seznam-10-12&per_page=10&_fields=id,slug,title,content,categories,link"
+    }
+  ],
+  "excludedPosts": [
+    {
+      "id": 728,
+      "slug": "svetnik-seznam-05-29-2",
+      "title": "29. maj",
+      "reason": "Nonstandard duplicate slug; no inferred date correction."
+    }
+  ],
+  "scope": "Datumska dejstva in imena; brez prepisovanja življenjepisov.",
+  "retainedRomcalRecords": 97,
+  "addedRecords": 270,
+  "coveredDates": 366,
+  "sourceCounts": {
+    "Ognjišče": 269,
+    "romcal": 98
+  }
+}

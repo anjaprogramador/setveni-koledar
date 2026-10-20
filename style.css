@@ -172,6 +172,11 @@ nav {
 nav > a:not(.button):hover {
   color: #0b8a55;
 }
+.navigation #main-nav > a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
 .nav-down {
   font-size: 17px;
   margin-left: 5px;
@@ -1281,6 +1286,9 @@ body:has(dialog[open]) {
   }
 }
 @media (max-width: 991px) {
+  #main-nav {
+    gap: 10px;
+  }
   .navigation {
     height: 78px;
     position: relative;
@@ -1933,6 +1941,10 @@ body:has(dialog[open]) {
   }
 }
 @media (max-width: 359px) {
+  #main-nav {
+    left: -16px;
+    right: -16px;
+  }
   .container {
     width: calc(100% - 32px);
   }

@@ -93,14 +93,30 @@ test("namedays have valid fixed dates, source references and a static fallback",
   const namedays = require("../content/namedays.json");
   const page = pages.find(p => p.route === "godovi/").html;
   assert.equal((page.match(/data-nameday-entry /g) || []).length, namedays.entries.length);
-  assert.ok(namedays.entries.length >= 90);
+  const coveredDates = new Set(namedays.entries.map(e => `${e.month}-${e.day}`));
+  for (let month = 1; month <= 12; month++) {
+    const length = new Date(Date.UTC(2000, month, 0)).getUTCDate();
+    for (let day = 1; day <= length; day++)
+      assert.ok(coveredDates.has(`${month}-${day}`), `Missing saint for ${day}.${month}.`);
+  }
+  assert.equal(coveredDates.size, 366, "Every calendar date, including leap day, has a saint");
   assert.equal(new Set(namedays.entries.map(e => e.month)).size, 12);
   for (const entry of namedays.entries) {
     const date = new Date(Date.UTC(2000, entry.month - 1, entry.day));
     assert.equal(date.getUTCMonth() + 1, entry.month);
     assert.equal(date.getUTCDate(), entry.day);
-    assert.ok(entry.source.includes(namedays.source.commit));
-    assert.match(entry.source, /#L\d+$/);
+    const source = new URL(entry.source);
+    assert.ok(["revija.ognjisce.si", "github.com"].includes(source.hostname));
+    if (source.hostname === "revija.ognjisce.si") {
+      const parts = source.pathname.match(/^\/svetnik-seznam-(\d{2})-(\d{2})\/$/);
+      assert.ok(parts, `Expected a dated daily source for ${entry.day}.${entry.month}.`);
+      assert.equal(Number(parts[1]), entry.month, "Source month must match displayed month");
+      assert.equal(Number(parts[2]), entry.day, "Source day must match displayed day");
+    }
+    if (source.hostname === "github.com") {
+      assert.ok(entry.source.includes("/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/"));
+      assert.match(entry.source, /#L\d+$/);
+    }
     assert.ok(entry.names.every(name => page.includes(name)));
   }
   assert.match(page, /Ni popoln uradni slovenski bogoslužni koledar/);
