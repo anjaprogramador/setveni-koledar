@@ -218,7 +218,7 @@
     }
     const herbGroup = choices(
       herbs,
-      "Zelišča in dišavnice",
+      "Začimbe, zelišča in dišavnice",
       "Za kuhinjo, čaj in dišeč balkon. Vsakemu zelišču namenimo svojo posodo.",
     );
     let vegetableGroup = choices(
@@ -495,6 +495,20 @@
       renderWizard(true);
     }
   });
-  if (profile) renderResult();
+  if (new URLSearchParams(window.location.search).get("nacrt") === "zacimbe") {
+    const consumedUrl = new URL(window.location.href);
+    consumedUrl.searchParams.delete("nacrt");
+    window.history.replaceState(null, "", consumedUrl.pathname + consumedUrl.search + consumedUrl.hash);
+    const knownBalcony = profile && hasBalcony(profile);
+    draft = profile ? clone(profile) : draft;
+    draft.space = profile && hasGarden(profile) ? "both" : "balcony";
+    if (!knownBalcony) draft.balcony.sun = null;
+    const herbIds = app.plants
+      .filter((plant) => plant.kind === "herb")
+      .map((plant) => plant.id);
+    if (!profile) draft.selected = draft.selected.filter((id) => herbIds.includes(id));
+    step = knownBalcony ? 3 : 1;
+    renderWizard();
+  } else if (profile) renderResult();
   else renderWizard();
 })();

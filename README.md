@@ -48,6 +48,7 @@ Po spremembi JavaScripta ali slogov posodobite različice datotek v HTML. Tako
 brskalnik ob objavi ne uporabi starih skriptov skupaj z novim vmesnikom:
 
 ```sh
+node scripts/generate-seo-pages.cjs
 node scripts/update-asset-versions.cjs
 node --test tests/*.test.cjs
 ```
@@ -57,7 +58,7 @@ da HTML kaže na aktualne različice ter ohrani vrstni red zagona skriptov.
 
 ## Lokalni zagon
 
-Projekt je statičen in ne potrebuje namestitve odvisnosti ali gradnje:
+Projekt je statičen in za streženje ne potrebuje namestitve odvisnosti. Po spremembah vsebine najprej poženite zgornji generator z Node.js, nato strežnik:
 
 ```sh
 cd /workspace/setveni-koledar
@@ -94,3 +95,34 @@ Javno dostopen vir fotografije sam po sebi ne pomeni odprte licence za ponovno u
 Termini so okviren, splošen vodič za osrednjo Slovenijo in niso odvisni od leta.
 Natančne termine, globino in razmike prilagodite sorti, vremenu ter navodilom na
 semenski vrečki. Stran ne vsebuje dnevnih luninih priporočil ali vremenskih podatkov.
+
+
+## Javni vodniki, godovi in ljudske modrosti
+
+`node scripts/generate-seo-pages.cjs` iz `content/*.json`, koledarskih podatkov
+in `site.config.json` ustvari 36 statičnih podstrani, začetne vsebinske odseke,
+`seo-manifest.json` in `sitemap.xml` (skupaj 37 URL-jev). Generirane datoteke so
+shranjene v repozitoriju, zato GitHub Pages ne potrebuje lastne gradnje.
+Po spremembi domena/ime projekta se popravi v `site.config.json` in ponovno
+požene generator ter posodobitev različic. Datoteke v označenih `SEO:*` odsekih
+začetne strani ureja generator.
+
+Javne poti: `balkon/`, `rastline/`, `rastline/{id}/`, `meseci/`,
+`meseci/{mesec}/`, `godovi/`, `ljudske-modrosti/`, `o-projektu/`.
+Vodniki delujejo brez JavaScripta; na začetni strani se običajen klik na
+rastlinsko povezavo še vedno odpre v hitrem pogovornem oknu, kjer je tudi povezava
+na celoten vodnik. `?nacrt=zacimbe#nacrt` odpre izbiro začimb in ohrani obstoječe
+pogoje; spremembe se shranijo šele ob potrditvi. `?mesec=1..12#koledar` odpre
+izbrani mesec.
+
+`godovi/` ponuja izbor 97 stalnih zapisov s slovenskimi imeni in povezavo na
+izvorni datum iz romcal. Ni popoln uradni slovenski bogoslužni koledar.
+`tradition.js` doda filtre mesecev in iskanje brez šumnikov; brez JS so vidni vsi
+zapisi. Podlaga in MIT licenca sta v `content/namedays.json` in
+`content/romcal-LICENSE.txt`. Pregovori in njihove samostojne praktične razlage
+so v `content/proverbs.json`. Pri Matiji je pojasnjena razlika med februarskim
+ljudskim datumom in sedanjim majskim godom.
+
+Izvedene SEO spremembe, dejansko pregledani viri, omejitve Google Trends ter
+postopek za Search Console so v [SEO-REPORT.md](SEO-REPORT.md). Socialna slika
+je lastna tipografska kompozicija projekta v `assets/social-card.png`.

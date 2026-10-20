@@ -1,0 +1,187 @@
+[
+  {
+    "route": "",
+    "title": "Setveni koledar za vrt in balkon | Zelišča in zelenjava",
+    "description": "Setveni koledar za vrt in balkon: kdaj sejati zelenjavo in zelišča, kako izbrati začimbe za lonce ter sestaviti svoj osebni načrt."
+  },
+  {
+    "route": "rastline/solata/",
+    "title": "Solata: setev, sajenje in pobiranje | Setveni koledar",
+    "description": "Kako sejati, saditi in pobirati solato na vrtu ali balkonu: primerna posoda, postopne setve, zalivanje in izbira sorte za sezono."
+  },
+  {
+    "route": "rastline/korenje/",
+    "title": "Korenje: setev, sajenje in pobiranje | Setveni koledar",
+    "description": "Korenje na vrtu ali v globoki posodi: neposredna setev, rahla zemlja, redčenje, zalivanje in okvirni čas pobiranja korenov."
+  },
+  {
+    "route": "rastline/redkvica/",
+    "title": "Redkvica: setev, sajenje in pobiranje | Setveni koledar",
+    "description": "Redkvica za začetnike: kdaj sejati, koliko prostora pustiti, kako zalivati ter kdaj pobrati mlade korene na vrtu in balkonu."
+  },
+  {
+    "route": "rastline/spinaca/",
+    "title": "Špinača: setev, sajenje in pobiranje | Setveni koledar",
+    "description": "Špinača v hladnejšem delu leta: neposredna setev, redčenje, nega vlažne zemlje in pobiranje listov na vrtu ali v balkonski posodi."
+  },
+  {
+    "route": "rastline/paradiznik/",
+    "title": "Paradižnik: setev, sajenje in pobiranje | Setveni koledar",
+    "description": "Paradižnik na vrtu in balkonu: izbira kompaktne sorte, vzgoja sadik, dovolj velika posoda, opora, zalivanje ter pobiranje plodov."
+  },
+  {
+    "route": "rastline/paprika/",
+    "title": "Paprika: setev, sajenje in pobiranje | Setveni koledar",
+    "description": "Paprika za vrt in sončen balkon: priprava sadik, čas presajanja, velikost posode, enakomerno zalivanje in pobiranje zelenih ali zrelih plodov."
+  },
+  {
+    "route": "rastline/grah/",
+    "title": "Grah: setev, sajenje in pobiranje | Setveni koledar",
+    "description": "Grah na vrtu ali balkonu: zgodnja setev, nizke sorte za posode, primerna opora, zalivanje in pravočasno pobiranje strokov."
+  },
+  {
+    "route": "rastline/cesen/",
+    "title": "Česen: setev, sajenje in pobiranje | Setveni koledar",
+    "description": "Kako saditi česen jeseni ali spomladi: izbira strokov, razmiki, odcedna posoda, znaki zrelosti ter sušenje in shranjevanje glavic."
+  },
+  {
+    "route": "rastline/motovilec/",
+    "title": "Motovilec: setev, sajenje in pobiranje | Setveni koledar",
+    "description": "Motovilec za jesen in zimo: plitva setev, vlaga do vznika, zaščita posode in pobiranje nezamrznjenih rozet na vrtu ali balkonu."
+  },
+  {
+    "route": "rastline/fizol/",
+    "title": "Fižol: setev, sajenje in pobiranje | Setveni koledar",
+    "description": "Fižol za manjši vrt in balkon: kdaj sejati nizke sorte, kako izbrati posodo, zalivati med cvetenjem in pobirati stročji fižol."
+  },
+  {
+    "route": "rastline/bucka/",
+    "title": "Bučka: setev, sajenje in pobiranje | Setveni koledar",
+    "description": "Bučka na vrtu ali v veliki posodi: čas sajenja, prostor za liste, zalivanje, opraševanje in redno pobiranje mladih plodov."
+  },
+  {
+    "route": "rastline/por/",
+    "title": "Por: setev, sajenje in pobiranje | Setveni koledar",
+    "description": "Por od sadike do pobiranja: izbira sezonske sorte, razmiki, redno zalivanje, gojenje v globoki posodi in omejitve prezimovanja."
+  },
+  {
+    "route": "rastline/bazilika/",
+    "title": "Bazilika v loncu: gojenje in nega | Setveni koledar",
+    "description": "Bazilika na balkonu: setev ali sadika, najmanj 5-litrska posoda, topla lega, pravilno zalivanje ter rez vršičkov za sveže liste."
+  },
+  {
+    "route": "rastline/petersilj/",
+    "title": "Peteršilj v loncu: gojenje in nega | Setveni koledar",
+    "description": "Listni peteršilj na vrtu ali balkonu: počasna kalitev, izbira globoke posode, sonce ali polsenca ter pravilno pobiranje zunanjih listov."
+  },
+  {
+    "route": "rastline/drobnjak/",
+    "title": "Drobnjak v loncu: gojenje in nega | Setveni koledar",
+    "description": "Drobnjak v loncu ali na vrtu: sajenje šopa, majhna posoda z odtokom, zmerno zalivanje, delitev rastline in rez listov za kuhinjo."
+  },
+  {
+    "route": "rastline/meta/",
+    "title": "Meta v loncu: gojenje in nega | Setveni koledar",
+    "description": "Meta na balkonu ali vrtu: lastna posoda, omejevanje korenin, svetla polsenca, dovolj vlage in sprotno pobiranje mladih vršičkov."
+  },
+  {
+    "route": "rastline/timijan/",
+    "title": "Timijan v loncu: gojenje in nega | Setveni koledar",
+    "description": "Timijan za sončen balkon ali vrt: odcedna zemlja, posoda z odtokom, zmerno zalivanje, previden rez in uporaba listov v kuhinji."
+  },
+  {
+    "route": "rastline/rozmarin/",
+    "title": "Rožmarin v loncu: gojenje in nega | Setveni koledar",
+    "description": "Rožmarin v posodi ali na vrtu: sončna lega, odcedna zemlja, prostor za korenine, zmeren rez in previdno načrtovano prezimovanje."
+  },
+  {
+    "route": "rastline/",
+    "title": "Rastlinski vodniki: zelenjava in zelišča | Setveni koledar",
+    "description": "Vodniki za 12 vrst zelenjave in 6 zelišč: setev, primerni lonci, nega in okvirni čas pobiranja za vrt ali balkon."
+  },
+  {
+    "route": "meseci/januar/",
+    "title": "Setveni koledar za januar | Vrt in balkon",
+    "description": "Kaj sejati, saditi in pobirati januarja? Mesečni pregled zelenjave in zelišč ter praktični nasveti za vrt in balkon v osrednji Sloveniji."
+  },
+  {
+    "route": "meseci/februar/",
+    "title": "Setveni koledar za februar | Vrt in balkon",
+    "description": "Kaj sejati, saditi in pobirati februarja? Mesečni pregled zelenjave in zelišč ter praktični nasveti za vrt in balkon v osrednji Sloveniji."
+  },
+  {
+    "route": "meseci/marec/",
+    "title": "Setveni koledar za marec | Vrt in balkon",
+    "description": "Kaj sejati, saditi in pobirati marca? Mesečni pregled zelenjave in zelišč ter praktični nasveti za vrt in balkon v osrednji Sloveniji."
+  },
+  {
+    "route": "meseci/april/",
+    "title": "Setveni koledar za april | Vrt in balkon",
+    "description": "Kaj sejati, saditi in pobirati aprila? Mesečni pregled zelenjave in zelišč ter praktični nasveti za vrt in balkon v osrednji Sloveniji."
+  },
+  {
+    "route": "meseci/maj/",
+    "title": "Setveni koledar za maj | Vrt in balkon",
+    "description": "Kaj sejati, saditi in pobirati maja? Mesečni pregled zelenjave in zelišč ter praktični nasveti za vrt in balkon v osrednji Sloveniji."
+  },
+  {
+    "route": "meseci/junij/",
+    "title": "Setveni koledar za junij | Vrt in balkon",
+    "description": "Kaj sejati, saditi in pobirati junija? Mesečni pregled zelenjave in zelišč ter praktični nasveti za vrt in balkon v osrednji Sloveniji."
+  },
+  {
+    "route": "meseci/julij/",
+    "title": "Setveni koledar za julij | Vrt in balkon",
+    "description": "Kaj sejati, saditi in pobirati julija? Mesečni pregled zelenjave in zelišč ter praktični nasveti za vrt in balkon v osrednji Sloveniji."
+  },
+  {
+    "route": "meseci/avgust/",
+    "title": "Setveni koledar za avgust | Vrt in balkon",
+    "description": "Kaj sejati, saditi in pobirati avgusta? Mesečni pregled zelenjave in zelišč ter praktični nasveti za vrt in balkon v osrednji Sloveniji."
+  },
+  {
+    "route": "meseci/september/",
+    "title": "Setveni koledar za september | Vrt in balkon",
+    "description": "Kaj sejati, saditi in pobirati septembra? Mesečni pregled zelenjave in zelišč ter praktični nasveti za vrt in balkon v osrednji Sloveniji."
+  },
+  {
+    "route": "meseci/oktober/",
+    "title": "Setveni koledar za oktober | Vrt in balkon",
+    "description": "Kaj sejati, saditi in pobirati oktobra? Mesečni pregled zelenjave in zelišč ter praktični nasveti za vrt in balkon v osrednji Sloveniji."
+  },
+  {
+    "route": "meseci/november/",
+    "title": "Setveni koledar za november | Vrt in balkon",
+    "description": "Kaj sejati, saditi in pobirati novembra? Mesečni pregled zelenjave in zelišč ter praktični nasveti za vrt in balkon v osrednji Sloveniji."
+  },
+  {
+    "route": "meseci/december/",
+    "title": "Setveni koledar za december | Vrt in balkon",
+    "description": "Kaj sejati, saditi in pobirati decembra? Mesečni pregled zelenjave in zelišč ter praktični nasveti za vrt in balkon v osrednji Sloveniji."
+  },
+  {
+    "route": "meseci/",
+    "title": "Setveni koledar po mesecih: kaj in kdaj sejati",
+    "description": "Pregleden setveni koledar za vseh 12 mesecev. Preverite setev, sajenje in pobiranje zelenjave ter zelišč na vrtu in balkonu."
+  },
+  {
+    "route": "balkon/",
+    "title": "Začimbe in zelišča na balkonu: izbor in nega",
+    "description": "Katere začimbe izbrati za balkon? Bazilika, peteršilj, drobnjak, meta, timijan in rožmarin: sonce, velikost loncev, zalivanje in osebni načrt."
+  },
+  {
+    "route": "o-projektu/",
+    "title": "O projektu, metodologiji in virih | Setveni koledar",
+    "description": "Kako uporabljati setveni koledar in osebni načrtovalnik. Okvirni termini za osrednjo Slovenijo, omejitve priporočil, lokalno shranjevanje in viri."
+  },
+  {
+    "route": "godovi/",
+    "title": "Godovi slovenskih imen: koledar svetnikov po mesecih",
+    "description": "Koledar izbranih godov slovenskih imen po svetnikih. Poiščite ime, preverite datum godu ter preberite razliko med godom in rojstnim dnem."
+  },
+  {
+    "route": "ljudske-modrosti/",
+    "title": "Ljudske modrosti in vremenski pregovori za vrt",
+    "description": "Slovenski ljudski pregovori o vremenu, letnih časih in delu na vrtu. Razlage izročila ter praktični opomniki za vrt in balkon skozi leto."
+  }
+]

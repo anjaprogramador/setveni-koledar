@@ -1,0 +1,139 @@
+{
+  "label": "Slovensko ljudsko izročilo",
+  "note": "Izbor razširjenih slovenskih pregovorov. Besedila poznajo krajevne in zapisne različice; zbirka ni kritična izdaja zgodovinskega vira. Praktične razlage so besedilo tega projekta. Vremenski pregovori niso zanesljiva vremenska napoved.",
+  "entries": [
+    {
+      "id": "svecnica",
+      "text": "Če je svečnica zelena, bo velika noč snežena.",
+      "months": [
+        2
+      ],
+      "day": 2,
+      "context": "Svečnica je v ljudskem koledarju mejnik med zimo in pričakovanjem pomladi. Pregovor povezuje vreme dveh oddaljenih praznikov.",
+      "practice": "Topel februarski dan še ne pomeni konca pozebe. S setvijo na prosto počakajte na primerne razmere za izbrano rastlino."
+    },
+    {
+      "id": "matija",
+      "text": "Sveti Matija led razbija, če ga ni, ga pa naredi.",
+      "months": [
+        2
+      ],
+      "day": 24,
+      "context": "Pregovor se navezuje na stari datum Matijevega, 24. februar. V sedanjem splošnem rimskem koledarju je god apostola Matija 14. maja.",
+      "practice": "Zemlja se ob koncu zime ogreva neenakomerno. Pred obdelavo preverite, ali je odmrznjena in dovolj suha."
+    },
+    {
+      "id": "lastovka",
+      "text": "Ena lastovka še ne prinese pomladi.",
+      "months": [
+        3,
+        4
+      ],
+      "context": "Posamezen znak še ne potrdi spremembe letnega časa. Pregovor ima tudi širši pomen: sklepajmo iz več opažanj.",
+      "practice": "Pred presajanjem toploljubnih sadik spremljajte nočne temperature in večdnevno napoved, ne le enega sončnega popoldneva."
+    },
+    {
+      "id": "medard",
+      "text": "Če na Medarda dežuje, še štirideset dni dežuje.",
+      "months": [
+        6
+      ],
+      "day": 8,
+      "context": "Medardovo je v vremenskem izročilu povezano z začetkom poletja in daljšimi deževnimi obdobji.",
+      "practice": "Daljše mokro obdobje zahteva dobro odtekanje vode in zračenje rastlin. Iz enega deževnega dne pa ni mogoče zanesljivo napovedati naslednjih štirideset dni."
+    },
+    {
+      "id": "mala-masa",
+      "text": "Kdor po mali maši kosi, za pečjo suši.",
+      "months": [
+        9
+      ],
+      "day": 8,
+      "context": "Mala maša, 8. september, je bila pri kmečkih opravilih eden od jesenskih mejnikov. Krajši dnevi otežijo sušenje na prostem.",
+      "practice": "Zelišča za sušenje pobirajte v suhem vremenu in jih sušite na zračnem mestu. Jeseni upoštevajte roso in večjo zračno vlago."
+    },
+    {
+      "id": "luka",
+      "text": "Sveti Luka v roke huka.",
+      "months": [
+        10
+      ],
+      "day": 18,
+      "context": "Lukovo, 18. oktobra, v ljudskem koledarju opozarja na hladnejša jutra in prihod pozne jeseni.",
+      "practice": "Preglejte zaščito občutljivih rastlin in loncev. Dejanski trenutek umika v zavetje določite po temperaturi in potrebah rastline."
+    },
+    {
+      "id": "martin",
+      "text": "Sveti Martin iz mošta dela vin'.",
+      "months": [
+        11
+      ],
+      "day": 11,
+      "context": "Martinovo je v slovenskem izročilu povezano z zaključevanjem vinogradniškega leta ter simbolično spremembo mošta v vino.",
+      "practice": "November je tudi čas za pregled shranjenega pridelka, čiščenje orodja in zapis opažanj za prihodnjo sezono."
+    },
+    {
+      "id": "bozic",
+      "text": "Zelen božič, bela velika noč.",
+      "months": [
+        12
+      ],
+      "day": 25,
+      "context": "Vremenski pregovor postavlja nasproti milo zimo in hladno pomlad. Poznamo več krajevnih različic takih napovedi.",
+      "practice": "Zimsko načrtovanje naj bo prilagodljivo. Termine spomladanskih setev določite po razmerah, sorti in navodilih na semenu."
+    },
+    {
+      "id": "kar-sejes",
+      "text": "Kar seješ, to žanješ.",
+      "months": [
+        3,
+        4,
+        5,
+        7,
+        8,
+        9
+      ],
+      "context": "Pregovor iz pridelave hrane prehaja tudi v vsakdanje življenje: dejanja imajo posledice.",
+      "practice": "Zapišite sorto in datum setve. Ob pobiranju boste lažje primerjali, kaj se je na vašem vrtu ali balkonu dobro obneslo."
+    },
+    {
+      "id": "brez-dela",
+      "text": "Brez dela ni jela.",
+      "months": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "context": "Kratek pregovor poudarja povezanost truda in pridelka.",
+      "practice": "Začnite z obsegom vrta, ki ga lahko redno oskrbujete. Nekaj dobro negovanih loncev je dober začetek."
+    },
+    {
+      "id": "rana-ura",
+      "text": "Rana ura, zlata ura.",
+      "months": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "context": "Pregovor ceni zgodnji začetek dela. Na vrtu je jutro pogosto prijetnejši čas za opravila v poletni vročini.",
+      "practice": "V vročini zalivajte predvsem zemljo in preverite vlago pod površino. Količino vode prilagodite posodi, rastlini in vremenu."
+    },
+    {
+      "id": "po-toci",
+      "text": "Po toči zvoniti je prepozno.",
+      "months": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "context": "Pregovor spominja, da je pravočasna priprava pogosto koristnejša od ukrepanja po škodi.",
+      "practice": "Pred neurjem preverite opore, pritrdite lahke predmete in po potrebi umaknite premične lonce v zavetje."
+    }
+  ]
+}

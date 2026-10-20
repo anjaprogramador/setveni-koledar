@@ -8,6 +8,7 @@
   const assets = new Set([
     "style.css",
     "planner.css",
+    "public.css",
     "app.js",
     "planner-engine.js",
     "planner.js",

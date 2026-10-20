@@ -10,6 +10,7 @@
   const assets = [
     "style.css",
     "planner.css",
+    "public.css",
     "app.js",
     "planner-engine.js",
     "planner.js",

@@ -1,0 +1,1086 @@
+/* Public, crawlable guides share the site's visual language. */
+.herb-discovery {
+  padding: 24px;
+  background: #f2f6e8;
+  border: 1px solid #dce6ce;
+  border-radius: 16px;
+  margin: 0 0 26px;
+}
+.herb-discovery-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.herb-discovery h3 {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.3;
+  margin: 0;
+  color: var(--green);
+}
+.herb-discovery-heading > p {
+  font-size: 12px;
+  line-height: 1.9;
+  margin: 0;
+  color: #5d7051;
+  max-width: 430px;
+}
+.herb-discovery-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 14px;
+  margin: 20px 0;
+}
+.herb-discovery-grid > a {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  min-width: 0;
+  color: var(--green);
+}
+.herb-discovery-grid img {
+  width: 100%;
+  height: 86px;
+  object-fit: cover;
+}
+.herb-discovery-grid strong {
+  font-size: 12px;
+  display: block;
+  padding: 11px;
+}
+.herb-discovery-grid a:hover strong {
+  text-decoration: underline;
+}
+.herb-discovery-actions {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+.herb-discovery-actions > .button {
+  font-size: 12px;
+  padding: 12px 18px;
+}
+.herb-discovery-actions > .public-text-link {
+  font-size: 11px;
+}
+.public-text-link {
+  font-weight: 700;
+  color: var(--green);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.month-overview {
+  padding-block: 50px;
+}
+.month-overview h2 {
+  font-size: 29px;
+  font-weight: 800;
+  line-height: 1.3;
+  margin: 0 0 12px;
+}
+.month-overview > p {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.9;
+  max-width: 800px;
+}
+.public-month-links {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 24px;
+}
+.public-month-links a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border: 1px solid #dde6d5;
+  border-radius: 9px;
+  padding: 15px;
+  background: #f5f7f1;
+  color: var(--green);
+  font-size: 12px;
+  font-weight: 700;
+}
+.public-month-links a:hover {
+  background: #fff4ba;
+  border-color: var(--yellow);
+}
+.footer-seo-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 28px;
+  font-size: 11px;
+  padding-bottom: 25px;
+  color: var(--green);
+}
+.footer-seo-links > a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.full-guide-link {
+  display: block;
+  margin: 18px 0 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--green);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.tradition-home {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.tradition-home-grid,
+.proverb-grid,
+.nameday-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+.tradition-home .section-heading {
+  display: block;
+  max-width: 760px;
+}
+.tradition-home .section-heading h2 {
+  margin-top: 12px;
+}
+.tradition-feature {
+  display: flex;
+  gap: 22px;
+  padding: 30px;
+  background: #f1f5e9;
+  border: 1px solid #dce5d2;
+  border-radius: 12px;
+}
+.tradition-feature:hover {
+  border-color: var(--green);
+}
+.tradition-feature h3 {
+  font-size: 21px;
+  line-height: 1.5;
+  margin: 0 0 12px;
+}
+.tradition-feature p {
+  font-size: 14px;
+  line-height: 1.9;
+  margin: 0 0 20px;
+}
+.tradition-symbol {
+  font-size: 38px;
+  color: var(--green);
+}
+.tradition-note {
+  background: #f1f5e9;
+  border-left: 4px solid var(--green);
+  padding: 24px 28px;
+  line-height: 1.9;
+  font-size: 14px;
+  margin-bottom: 35px;
+}
+.tradition-note p:last-child {
+  margin-bottom: 0;
+}
+.nameday-controls {
+  display: grid;
+  grid-template-columns: minmax(140px, 1fr) minmax(220px, 2fr);
+  gap: 24px;
+  padding: 26px;
+  background: var(--green);
+  border-radius: 10px;
+}
+.nameday-controls label {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.nameday-controls input,
+.nameday-controls select {
+  width: 100%;
+  min-width: 0;
+  min-height: 48px;
+  padding: 12px;
+  border: 1px solid #bac8b7;
+  border-radius: 5px;
+  background: white;
+  color: #173d32;
+  font: inherit;
+  font-size: 14px;
+}
+.nameday-status {
+  font-size: 13px;
+  margin: 20px 0;
+  color: #456246;
+}
+.calendar-scope {
+  font-size: 13px;
+  line-height: 1.9;
+  margin: 0 0 25px;
+}
+.calendar-scope a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.nameday-month {
+  margin: 40px 0;
+}
+.nameday-month > h2 {
+  font-size: 26px;
+  border-bottom: 2px solid #dce5d2;
+  padding-bottom: 16px;
+}
+.nameday-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  border: 1px solid #dce5d2;
+  border-radius: 8px;
+  padding: 22px;
+}
+.nameday-card > div:last-child {
+  min-width: 0;
+}
+.nameday-date {
+  background: var(--yellow);
+  border-radius: 6px;
+  min-width: 58px;
+  padding: 10px;
+  text-align: center;
+  color: var(--green);
+}
+.nameday-date strong,
+.nameday-date span {
+  display: block;
+}
+.nameday-date strong {
+  font-size: 25px;
+}
+.nameday-date span {
+  font-size: 12px;
+  margin-top: 2px;
+}
+.nameday-card h3 {
+  font-size: 17px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+  margin: 0 0 8px;
+}
+.nameday-card p {
+  font-size: 13px;
+  line-height: 1.8;
+  margin: 0 0 10px;
+}
+.nameday-source {
+  font-size: 11px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.nameday-empty {
+  padding: 25px;
+  border: 1px dashed #90a686;
+  line-height: 1.9;
+}
+.proverb-card {
+  background: #f6f8f1;
+  padding: 32px;
+  border-radius: 10px;
+}
+.proverb-card blockquote,
+.month-tradition blockquote {
+  margin: 24px 0;
+  font-size: 23px;
+  line-height: 1.6;
+  font-weight: 700;
+  color: var(--green);
+}
+.proverb-card h2 {
+  font-size: 15px;
+  margin-top: 25px;
+}
+.proverb-card > p {
+  font-size: 14px;
+  line-height: 1.9;
+}
+.proverb-card .eyebrow {
+  font-size: 10px;
+}
+.tradition-explanation {
+  max-width: 850px;
+  margin-top: 60px;
+}
+.month-tradition {
+  background: #f1f5e9;
+  border-radius: 8px;
+  padding: 24px;
+  margin-top: 35px;
+}
+[data-nameday-calendar] [hidden] {
+  display: none !important;
+}
+@media (max-width: 700px) {
+  .tradition-home-grid,
+  .proverb-grid,
+  .nameday-grid,
+  .nameday-controls {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .tradition-home {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .tradition-feature,
+  .proverb-card,
+  .nameday-controls,
+  .tradition-note {
+    padding: 22px;
+  }
+  .tradition-feature {
+    gap: 15px;
+  }
+  .tradition-symbol {
+    font-size: 28px;
+  }
+  .nameday-card {
+    padding: 17px;
+    gap: 15px;
+  }
+}
+.guide-page {
+  color: var(--text);
+}
+.guide-page .guide-header {
+  border-bottom: 1px solid #e8ece4;
+}
+.guide-page .guide-navigation {
+  min-height: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+.guide-page nav.guide-nav {
+  display: flex;
+  position: static;
+  padding: 0;
+  box-shadow: none;
+  align-items: center;
+  gap: 25px;
+  font-size: 12px;
+  font-weight: 700;
+  background: none;
+}
+.guide-page nav.guide-nav > a:hover {
+  text-decoration: underline;
+}
+.guide-page nav.breadcrumbs {
+  display: flex;
+  position: static;
+  padding: 0;
+  box-shadow: none;
+  flex-wrap: wrap;
+  gap: 9px;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.9;
+  color: #607455;
+  margin: 0 0 24px;
+  background: transparent;
+}
+.breadcrumbs a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.guide-hero {
+  background: #f1f5e9;
+  padding: 38px 0 45px;
+  border-radius: 0 0 24px 24px;
+}
+.guide-hero h1 {
+  font-size: 43px;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -1px;
+  max-width: 900px;
+  margin: 12px 0 18px;
+}
+.guide-hero .guide-description {
+  max-width: 850px;
+  font-size: 16px;
+  line-height: 1.9;
+  margin: 0;
+  color: #5b6e52;
+}
+.guide-content {
+  padding-block: 45px 65px;
+}
+.guide-article-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(240px, 1fr);
+  gap: 55px;
+  align-items: start;
+}
+.guide-article {
+  min-width: 0;
+  font-size: 15px;
+  line-height: 1.9;
+}
+.guide-article > p {
+  margin: 0 0 22px;
+}
+.guide-article h2 {
+  font-size: 27px;
+  line-height: 1.3;
+  margin: 38px 0 16px;
+  letter-spacing: -0.5px;
+}
+.guide-article h3 {
+  font-size: 19px;
+  line-height: 1.4;
+  margin: 28px 0 12px;
+}
+.guide-article ul,
+.guide-article ol {
+  padding-left: 22px;
+}
+.guide-article li + li {
+  margin-top: 10px;
+}
+.guide-photo {
+  margin: 0 0 30px;
+}
+.guide-photo img {
+  width: 100%;
+  max-height: 350px;
+  aspect-ratio: 1.7;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.guide-photo figcaption {
+  font-size: 11px;
+  color: #7b8774;
+  margin-top: 10px;
+}
+.guide-aside {
+  position: sticky;
+  top: 25px;
+  background: #f4f7ee;
+  border: 1px solid #e0e8d6;
+  border-radius: 15px;
+  padding: 25px;
+  min-width: 0;
+}
+.guide-aside h2 {
+  font-size: 19px;
+  line-height: 1.3;
+  margin: 0 0 22px;
+}
+.guide-aside dl {
+  margin: 0;
+}
+.guide-aside dt {
+  font-size: 11px;
+  font-weight: 600;
+  color: #74816a;
+  margin-top: 16px;
+}
+.guide-aside dt:first-child {
+  margin-top: 0;
+}
+.guide-aside dd {
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--green);
+  margin: 5px 0 0;
+}
+.guide-aside .button {
+  font-size: 12px;
+  padding: 13px 15px;
+  margin-top: 25px;
+  width: 100%;
+}
+.guide-aside p {
+  font-size: 11px;
+  color: #728065;
+  line-height: 1.9;
+  margin-bottom: 0;
+}
+.guide-method-note {
+  background: #f3f6ec;
+  border-left: 3px solid #91ab69;
+  padding: 16px 20px;
+  border-radius: 0 10px 10px 0;
+  font-size: 12px;
+  line-height: 1.9;
+  color: #627450;
+  margin: 30px 0;
+}
+.guide-faq details {
+  border-bottom: 1px solid #dfe7d6;
+  padding: 17px 0;
+}
+.guide-faq summary {
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--green);
+  line-height: 1.7;
+}
+.guide-faq details p {
+  font-size: 14px;
+  line-height: 1.9;
+  margin: 14px 0 5px;
+}
+.guide-related {
+  padding-top: 35px;
+  margin-top: 35px;
+  border-top: 1px solid #dfe6d8;
+}
+.guide-related h2 {
+  font-size: 23px;
+  margin-top: 0;
+}
+.guide-related ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 25px;
+  list-style: none;
+  padding: 0;
+}
+.guide-related li {
+  margin: 0 !important;
+}
+.guide-related a {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--green);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.guide-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+.public-plant-card {
+  display: flex;
+  flex-direction: column;
+  background: #f5f7f1;
+  border: 1px solid #e0e7d8;
+  border-radius: 15px;
+  overflow: hidden;
+  min-width: 0;
+}
+.public-plant-card > img {
+  width: 100%;
+  height: 185px;
+  object-fit: cover;
+  transition: transform 0.2s;
+}
+.public-plant-card:hover > img {
+  filter: brightness(0.98);
+}
+.public-plant-card > div {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.public-plant-card h2,
+.public-plant-card h3 {
+  font-size: 21px;
+  line-height: 1.4;
+  margin: 0 0 10px;
+  color: var(--green);
+  font-weight: 800;
+}
+.public-plant-card p {
+  font-size: 13px;
+  line-height: 1.9;
+  margin: 0 0 20px;
+  color: #65745b;
+}
+.public-plant-card .public-text-link {
+  font-size: 12px;
+  margin-top: auto;
+}
+.public-directory-heading {
+  font-size: 30px;
+  line-height: 1.3;
+  margin: 38px 0 25px;
+}
+.public-directory-heading:first-child {
+  margin-top: 0;
+}
+.public-guide-intro {
+  font-size: 16px;
+  line-height: 1.9;
+  max-width: 860px;
+  margin: 0 0 30px;
+}
+.guide-footer {
+  background: var(--yellow);
+  padding: 32px 0;
+  color: var(--green);
+  border-radius: 22px 22px 0 0;
+}
+.guide-footer > .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.guide-footer p {
+  font-size: 12px;
+  margin: 0;
+}
+.guide-footer nav {
+  display: flex;
+  position: static;
+  box-shadow: none;
+  background: transparent;
+  padding: 0;
+  flex-wrap: wrap;
+  gap: 18px;
+  font-size: 11px;
+}
+.guide-footer a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.guide-tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.guide-task {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  background: #f5f7f0;
+  border: 1px solid #e0e6d8;
+  border-radius: 12px;
+  padding: 15px;
+}
+.guide-task > img {
+  height: 65px;
+  width: 65px;
+  border-radius: 9px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.guide-task h3 {
+  font-size: 16px;
+  margin: 0 0 6px;
+}
+.guide-task p {
+  font-size: 12px;
+  line-height: 1.8;
+  margin: 0;
+  color: #6c7b62;
+}
+.guide-task a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.guide-page nav.guide-month-nav {
+  position: static;
+  width: auto;
+  padding: 0;
+  box-shadow: none;
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 35px;
+  padding-top: 25px;
+  border-top: 1px solid #dce5d2;
+}
+.guide-month-nav a {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--green);
+}
+.public-steps {
+  counter-reset: public-step;
+  list-style: none;
+  padding: 0 !important;
+}
+.public-steps > li {
+  counter-increment: public-step;
+  border: 1px solid #e0e8d8;
+  border-radius: 12px;
+  padding: 18px 20px;
+  margin: 12px 0;
+  position: relative;
+  background: #f7f9f3;
+}
+.public-steps > li > strong {
+  display: block;
+  color: var(--green);
+  font-size: 16px;
+}
+.public-steps > li > strong:before {
+  content: counter(public-step) ". ";
+  color: #819957;
+}
+.public-steps p {
+  margin: 9px 0 0;
+  font-size: 14px;
+  line-height: 1.9;
+}
+.guide-article a {
+  color: var(--green);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.guide-article a.button {
+  text-decoration: none;
+}
+.guide-plain-list li {
+  font-size: 14px;
+  line-height: 1.9;
+}
+.guide-page .site-header {
+  display: none;
+}
+@media (max-width: 991px) {
+  .herb-discovery-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .herb-discovery-grid {
+    gap: 10px;
+  }
+  .herb-discovery-grid img {
+    height: 70px;
+  }
+  .herb-discovery-grid strong {
+    font-size: 11px;
+    padding: 9px;
+  }
+  .guide-page .guide-navigation {
+    flex-wrap: wrap;
+    padding-block: 22px;
+    gap: 22px;
+  }
+  .guide-page nav.guide-nav {
+    gap: 20px;
+    font-size: 12px;
+  }
+  .guide-hero h1 {
+    font-size: 36px;
+  }
+  .guide-article-grid {
+    grid-template-columns: minmax(0, 1.8fr) minmax(215px, 1fr);
+    gap: 30px;
+  }
+  .guide-aside {
+    padding: 20px;
+  }
+  .guide-card-grid {
+    gap: 18px;
+  }
+  .public-plant-card > img {
+    height: 150px;
+  }
+  .public-plant-card > div {
+    padding: 17px;
+  }
+  .public-plant-card h2,
+  .public-plant-card h3 {
+    font-size: 19px;
+  }
+  .public-plant-card p {
+    font-size: 12px;
+  }
+  .guide-footer nav {
+    display: flex;
+    position: static;
+    padding: 0;
+  }
+}
+@media (max-width: 767px) {
+  .herb-discovery {
+    padding: 20px 16px;
+    margin-bottom: 24px;
+  }
+  .herb-discovery h3 {
+    font-size: 23px;
+  }
+  .herb-discovery-heading > p {
+    font-size: 12px;
+  }
+  .herb-discovery-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    margin: 19px 0;
+  }
+  .herb-discovery-grid img {
+    height: 67px;
+  }
+  .herb-discovery-grid strong {
+    font-size: 11px;
+    padding: 10px 8px;
+  }
+  .herb-discovery-actions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .herb-discovery-actions > .button {
+    font-size: 12px;
+    padding: 13px 15px;
+  }
+  .month-overview {
+    padding-block: 40px;
+  }
+  .month-overview h2 {
+    font-size: 27px;
+  }
+  .month-overview > p {
+    font-size: 13px;
+  }
+  .public-month-links {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 9px;
+  }
+  .public-month-links a {
+    font-size: 11px;
+    padding: 12px 10px;
+    gap: 5px;
+  }
+  .footer-seo-links {
+    gap: 14px 20px;
+    font-size: 10px;
+  }
+  .guide-page .guide-navigation {
+    padding-block: 20px;
+    gap: 20px;
+  }
+  .guide-page nav.guide-nav {
+    width: 100%;
+    gap: 13px 20px;
+    flex-wrap: wrap;
+    font-size: 11px;
+  }
+  .guide-page .brand {
+    font-size: 23px;
+  }
+  .guide-page nav.breadcrumbs {
+    font-size: 10px;
+    gap: 6px;
+    margin-bottom: 22px;
+  }
+  .guide-hero {
+    padding: 28px 0 34px;
+    border-radius: 0 0 18px 18px;
+  }
+  .guide-hero h1 {
+    font-size: 32px;
+    line-height: 1.2;
+    letter-spacing: -0.7px;
+  }
+  .guide-hero .guide-description {
+    font-size: 14px;
+    line-height: 1.9;
+  }
+  .guide-content {
+    padding-block: 35px 45px;
+  }
+  .guide-article-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .guide-article {
+    font-size: 15px;
+    line-height: 1.9;
+  }
+  .guide-article h2 {
+    font-size: 25px;
+    margin-top: 30px;
+  }
+  .guide-article h3 {
+    font-size: 18px;
+  }
+  .guide-aside {
+    position: static;
+    grid-row: 1;
+    padding: 22px;
+  }
+  .guide-aside dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px 17px;
+  }
+  .guide-aside dt {
+    margin: 0;
+    font-size: 10px;
+  }
+  .guide-aside dd {
+    font-size: 12px;
+  }
+  .guide-aside .button {
+    width: auto;
+    font-size: 12px;
+  }
+  .guide-aside p {
+    font-size: 11px;
+  }
+  .guide-photo img {
+    max-height: 250px;
+    aspect-ratio: 1.5;
+  }
+  .guide-photo figcaption {
+    font-size: 10px;
+  }
+  .guide-method-note {
+    font-size: 12px;
+    padding: 15px 17px;
+  }
+  .guide-faq summary {
+    font-size: 14px;
+  }
+  .guide-faq details p {
+    font-size: 14px;
+  }
+  .guide-card-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 13px;
+  }
+  .public-plant-card > img {
+    height: 125px;
+  }
+  .public-plant-card > div {
+    padding: 14px;
+  }
+  .public-plant-card h2,
+  .public-plant-card h3 {
+    font-size: 18px;
+  }
+  .public-plant-card p {
+    font-size: 12px;
+    line-height: 1.8;
+  }
+  .public-plant-card .public-text-link {
+    font-size: 11px;
+  }
+  .public-directory-heading {
+    font-size: 25px;
+    margin-block: 30px 20px;
+  }
+  .public-guide-intro {
+    font-size: 14px;
+  }
+  .guide-task {
+    gap: 12px;
+    padding: 13px;
+  }
+  .guide-task > img {
+    width: 52px;
+    height: 52px;
+  }
+  .guide-task h3 {
+    font-size: 15px;
+  }
+  .guide-task p {
+    font-size: 11px;
+  }
+  .guide-month-nav a {
+    font-size: 12px;
+  }
+  .guide-footer > .container {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .guide-footer nav {
+    font-size: 11px;
+    gap: 13px 20px;
+  }
+  .guide-related ul {
+    gap: 10px 20px;
+  }
+  .guide-related a {
+    font-size: 12px;
+  }
+  .public-steps > li {
+    padding: 17px;
+  }
+  .public-steps > li > strong {
+    font-size: 15px;
+  }
+  .public-steps p {
+    font-size: 14px;
+  }
+  .guide-article .public-month-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 359px) {
+  .herb-discovery {
+    padding: 18px 13px;
+  }
+  .herb-discovery h3 {
+    font-size: 21px;
+  }
+  .herb-discovery-grid {
+    gap: 8px;
+  }
+  .herb-discovery-grid strong {
+    font-size: 10px;
+  }
+  .guide-hero h1 {
+    font-size: 28px;
+  }
+  .guide-card-grid {
+    grid-template-columns: 1fr;
+  }
+  .public-month-links {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .guide-page nav.guide-nav {
+    gap: 12px 16px;
+  }
+  .guide-aside dl {
+    grid-template-columns: 1fr;
+  }
+}
+@media print {
+  .herb-discovery,
+  .month-overview,
+  .footer-seo-links {
+    display: none !important;
+  }
+  .guide-page .guide-header,
+  .guide-page .guide-footer {
+    display: none;
+  }
+  .guide-page .guide-article-grid {
+    display: block;
+  }
+  .guide-page .guide-aside {
+    position: static;
+    break-inside: avoid;
+  }
+  .guide-page .guide-hero {
+    padding-block: 20px;
+  }
+  .guide-page .guide-hero h1 {
+    font-size: 28px;
+  }
+  .guide-page .guide-article {
+    font-size: 11pt;
+  }
+  .guide-page .container {
+    width: 100%;
+  }
+  .guide-faq details:not([open]) {
+    display: none;
+  }
+}

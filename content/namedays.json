@@ -1,0 +1,901 @@
+{
+  "scope": "Izbor stalnih godov po splošnem rimskem koledarju z evropskimi dopolnili; ni popoln slovenski liturgični koledar.",
+  "source": {
+    "name": "romcal",
+    "url": "https://github.com/romcal/romcal",
+    "commit": "812d82caf817946dea07fce94fadd77973834308",
+    "license": "MIT"
+  },
+  "entries": [
+    {
+      "month": 1,
+      "day": 2,
+      "saint": "Sv. Bazilij Veliki in Gregor Nazianški, škofa",
+      "names": [
+        "Bazilij",
+        "Gregor"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L24"
+    },
+    {
+      "month": 1,
+      "day": 7,
+      "saint": "Sv. Rajmund Penjafortski, duhovnik",
+      "names": [
+        "Rajmund"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L39"
+    },
+    {
+      "month": 1,
+      "day": 13,
+      "saint": "Sv. Hilarij iz Poitiersa, škof",
+      "names": [
+        "Hilarij"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L46"
+    },
+    {
+      "month": 1,
+      "day": 17,
+      "saint": "Sv. Anton Puščavnik, opat",
+      "names": [
+        "Anton"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L53"
+    },
+    {
+      "month": 1,
+      "day": 20,
+      "saint": "Sv. Fabijan, papež in mučenec",
+      "names": [
+        "Fabijan"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L60"
+    },
+    {
+      "month": 1,
+      "day": 20,
+      "saint": "Sv. Sebastijan, mučenec",
+      "names": [
+        "Sebastijan"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L68"
+    },
+    {
+      "month": 1,
+      "day": 21,
+      "saint": "Sv. Neža Rimska, devica in mučenka",
+      "names": [
+        "Neža"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L76"
+    },
+    {
+      "month": 1,
+      "day": 24,
+      "saint": "Sv. Frančišek Saleški, škof",
+      "names": [
+        "Frančišek"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L92"
+    },
+    {
+      "month": 1,
+      "day": 26,
+      "saint": "Sv. Timotej in Tit, škofa",
+      "names": [
+        "Timotej",
+        "Tit"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L107"
+    },
+    {
+      "month": 1,
+      "day": 28,
+      "saint": "Sv. Tomaž Akvinski, duhovnik",
+      "names": [
+        "Tomaž"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L122"
+    },
+    {
+      "month": 1,
+      "day": 31,
+      "saint": "Sv. Janez Bosko, duhovnik",
+      "names": [
+        "Janez"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L129"
+    },
+    {
+      "month": 2,
+      "day": 3,
+      "saint": "Sv. Blaž, škof in mučenec",
+      "names": [
+        "Blaž"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L145"
+    },
+    {
+      "month": 2,
+      "day": 5,
+      "saint": "Sv. Agata, devica in mučenka",
+      "names": [
+        "Agata"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L160"
+    },
+    {
+      "month": 2,
+      "day": 10,
+      "saint": "Sv. Sholastika, devica",
+      "names": [
+        "Sholastika"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L191"
+    },
+    {
+      "month": 2,
+      "day": 21,
+      "saint": "Sv. Peter Damiani, škof",
+      "names": [
+        "Peter"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L220"
+    },
+    {
+      "month": 2,
+      "day": 23,
+      "saint": "Sv. Polikarp, škof in mučenec",
+      "names": [
+        "Polikarp"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L235"
+    },
+    {
+      "month": 3,
+      "day": 4,
+      "saint": "Sv. Kazimir",
+      "names": [
+        "Kazimir"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L251"
+    },
+    {
+      "month": 3,
+      "day": 7,
+      "saint": "Sv. Perpetua in Felicita, mučenki",
+      "names": [
+        "Perpetua",
+        "Felicita"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L258"
+    },
+    {
+      "month": 3,
+      "day": 8,
+      "saint": "Sv. Janez od Boga, redovnik",
+      "names": [
+        "Janez"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L267"
+    },
+    {
+      "month": 3,
+      "day": 9,
+      "saint": "Sv. Frančiška Rimska, redovnica",
+      "names": [
+        "Frančiška"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L274"
+    },
+    {
+      "month": 3,
+      "day": 17,
+      "saint": "Sv. Patrik, škof",
+      "names": [
+        "Patrik"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L281"
+    },
+    {
+      "month": 3,
+      "day": 19,
+      "saint": "Sv. Jožef, mož Device Marije",
+      "names": [
+        "Jožef",
+        "Jože"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L295"
+    },
+    {
+      "month": 4,
+      "day": 2,
+      "saint": "Sv. Frančišek Paolski, puščavnik",
+      "names": [
+        "Frančišek"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L331"
+    },
+    {
+      "month": 4,
+      "day": 4,
+      "saint": "Sv. Izidor Seviljski, škof",
+      "names": [
+        "Izidor"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L338"
+    },
+    {
+      "month": 4,
+      "day": 11,
+      "saint": "Sv. Stanislav, škof in mučenec",
+      "names": [
+        "Stanislav"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L359"
+    },
+    {
+      "month": 4,
+      "day": 21,
+      "saint": "Sv. Anzelm Canterburyjski, škof",
+      "names": [
+        "Anzelm"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L375"
+    },
+    {
+      "month": 4,
+      "day": 23,
+      "saint": "Sv. Jurij, mučenec",
+      "names": [
+        "Jurij"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L382"
+    },
+    {
+      "month": 4,
+      "day": 25,
+      "saint": "Sv. Marko, evangelist",
+      "names": [
+        "Marko"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L406"
+    },
+    {
+      "month": 4,
+      "day": 29,
+      "saint": "Sv. Katarina Sienska, devica",
+      "names": [
+        "Katarina"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L429"
+    },
+    {
+      "month": 5,
+      "day": 1,
+      "saint": "Sv. Jožef Delavec",
+      "names": [
+        "Jožef",
+        "Jože"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L443"
+    },
+    {
+      "month": 5,
+      "day": 2,
+      "saint": "Sv. Atanazij Aleksandrijski, škof",
+      "names": [
+        "Atanazij"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L450"
+    },
+    {
+      "month": 5,
+      "day": 3,
+      "saint": "Sv. Filip in Jakob, apostola",
+      "names": [
+        "Filip",
+        "Jakob"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L457"
+    },
+    {
+      "month": 5,
+      "day": 12,
+      "saint": "Sv. Pankracij, mučenec",
+      "names": [
+        "Pankracij"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L483"
+    },
+    {
+      "month": 5,
+      "day": 14,
+      "saint": "Sv. Matija, apostol",
+      "names": [
+        "Matija"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L498"
+    },
+    {
+      "month": 5,
+      "day": 16,
+      "saint": "Sv. Janez Nepomuk, duhovnik in mučenec",
+      "names": [
+        "Janez"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/countries/slovenia/index.ts#L12"
+    },
+    {
+      "month": 5,
+      "day": 22,
+      "saint": "Sv. Rita iz Cascie, redovnica",
+      "names": [
+        "Rita"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L530"
+    },
+    {
+      "month": 5,
+      "day": 26,
+      "saint": "Sv. Filip Neri, duhovnik",
+      "names": [
+        "Filip"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L558"
+    },
+    {
+      "month": 6,
+      "day": 1,
+      "saint": "Sv. Justin, mučenec",
+      "names": [
+        "Justin"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L609"
+    },
+    {
+      "month": 6,
+      "day": 5,
+      "saint": "Sv. Bonifacij, škof in mučenec",
+      "names": [
+        "Bonifacij"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L635"
+    },
+    {
+      "month": 6,
+      "day": 11,
+      "saint": "Sv. Barnaba, apostol",
+      "names": [
+        "Barnaba"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L657"
+    },
+    {
+      "month": 6,
+      "day": 13,
+      "saint": "Sv. Anton Padovanski, duhovnik",
+      "names": [
+        "Anton"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L665"
+    },
+    {
+      "month": 6,
+      "day": 21,
+      "saint": "Sv. Alojzij Gonzaga, redovnik",
+      "names": [
+        "Alojzij"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L679"
+    },
+    {
+      "month": 6,
+      "day": 28,
+      "saint": "Sv. Irenej Lyonski, škof in mučenec",
+      "names": [
+        "Irenej"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L720"
+    },
+    {
+      "month": 7,
+      "day": 3,
+      "saint": "Sv. Tomaž, apostol",
+      "names": [
+        "Tomaž"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L747"
+    },
+    {
+      "month": 7,
+      "day": 6,
+      "saint": "Sv. Marija Goretti, devica in mučenka",
+      "names": [
+        "Marija"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L769"
+    },
+    {
+      "month": 7,
+      "day": 11,
+      "saint": "Sv. Benedikt iz Nursije, opat",
+      "names": [
+        "Benedikt"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L786"
+    },
+    {
+      "month": 7,
+      "day": 15,
+      "saint": "Sv. Bonaventura, škof",
+      "names": [
+        "Bonaventura"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L807"
+    },
+    {
+      "month": 7,
+      "day": 22,
+      "saint": "Sv. Marija Magdalena",
+      "names": [
+        "Magdalena",
+        "Marija Magdalena"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L836"
+    },
+    {
+      "month": 7,
+      "day": 23,
+      "saint": "Sv. Brigita Švedska, redovnica",
+      "names": [
+        "Brigita"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L843"
+    },
+    {
+      "month": 7,
+      "day": 25,
+      "saint": "Sv. Jakob Starejši, apostol",
+      "names": [
+        "Jakob"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L857"
+    },
+    {
+      "month": 7,
+      "day": 26,
+      "saint": "Sv. Joahim in Ana, starša Device Marije",
+      "names": [
+        "Ana",
+        "Anja",
+        "Joahim"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L865"
+    },
+    {
+      "month": 7,
+      "day": 29,
+      "saint": "Sv. Marta, Marija in Lazar iz Betanije",
+      "names": [
+        "Marta",
+        "Marija",
+        "Lazar"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L874"
+    },
+    {
+      "month": 7,
+      "day": 31,
+      "saint": "Sv. Ignacij Loyolski, duhovnik",
+      "names": [
+        "Ignacij"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L889"
+    },
+    {
+      "month": 8,
+      "day": 1,
+      "saint": "Sv. Alfonz Marija Ligvorij, škof",
+      "names": [
+        "Alfonz"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L896"
+    },
+    {
+      "month": 8,
+      "day": 4,
+      "saint": "Sv. Janez Marija Vianej, duhovnik",
+      "names": [
+        "Janez"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L917"
+    },
+    {
+      "month": 8,
+      "day": 8,
+      "saint": "Sv. Dominik, duhovnik",
+      "names": [
+        "Dominik"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L956"
+    },
+    {
+      "month": 8,
+      "day": 9,
+      "saint": "Sv. Terezija Benedikta od Križa, devica in mučenka",
+      "names": [
+        "Terezija Benedikta"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L963"
+    },
+    {
+      "month": 8,
+      "day": 10,
+      "saint": "Sv. Lovrenc, diakon in mučenec",
+      "names": [
+        "Lovrenc"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L971"
+    },
+    {
+      "month": 8,
+      "day": 11,
+      "saint": "Sv. Klara Asiška, devica",
+      "names": [
+        "Klara"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L979"
+    },
+    {
+      "month": 8,
+      "day": 14,
+      "saint": "Sv. Maksimilijan Marija Kolbe, duhovnik in mučenec",
+      "names": [
+        "Maksimilijan"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1002"
+    },
+    {
+      "month": 8,
+      "day": 20,
+      "saint": "Sv. Bernard iz Clairvauxa, opat",
+      "names": [
+        "Bernard"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1034"
+    },
+    {
+      "month": 8,
+      "day": 24,
+      "saint": "Sv. Jernej, apostol",
+      "names": [
+        "Jernej"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1062"
+    },
+    {
+      "month": 8,
+      "day": 27,
+      "saint": "Sv. Monika",
+      "names": [
+        "Monika"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1084"
+    },
+    {
+      "month": 8,
+      "day": 28,
+      "saint": "Sv. Avguštin, škof",
+      "names": [
+        "Avguštin"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1091"
+    },
+    {
+      "month": 9,
+      "day": 3,
+      "saint": "Sv. Gregor Veliki, papež",
+      "names": [
+        "Gregor"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1108"
+    },
+    {
+      "month": 9,
+      "day": 5,
+      "saint": "Sv. Terezija iz Kalkute, devica",
+      "names": [
+        "Terezija"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1116"
+    },
+    {
+      "month": 9,
+      "day": 12,
+      "saint": "Devica Marija – praznovanje Marijinega imena",
+      "names": [
+        "Marija"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1137"
+    },
+    {
+      "month": 9,
+      "day": 17,
+      "saint": "Sv. Hildegarda iz Bingna, opatinja",
+      "names": [
+        "Hildegarda"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1177"
+    },
+    {
+      "month": 9,
+      "day": 21,
+      "saint": "Sv. Matej, apostol in evangelist",
+      "names": [
+        "Matej"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1208"
+    },
+    {
+      "month": 9,
+      "day": 26,
+      "saint": "Sv. Kozma in Damijan, mučenca",
+      "names": [
+        "Kozma",
+        "Damijan"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1223"
+    },
+    {
+      "month": 9,
+      "day": 27,
+      "saint": "Sv. Vincencij Pavelski, duhovnik",
+      "names": [
+        "Vincencij"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1232"
+    },
+    {
+      "month": 9,
+      "day": 29,
+      "saint": "Sv. Mihael, Gabrijel in Rafael, nadangeli",
+      "names": [
+        "Mihael",
+        "Gabrijel",
+        "Rafael"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1256"
+    },
+    {
+      "month": 9,
+      "day": 30,
+      "saint": "Sv. Hieronim, duhovnik",
+      "names": [
+        "Hieronim"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1264"
+    },
+    {
+      "month": 10,
+      "day": 1,
+      "saint": "Sv. Terezija Deteta Jezusa, devica",
+      "names": [
+        "Terezija"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1271"
+    },
+    {
+      "month": 10,
+      "day": 4,
+      "saint": "Sv. Frančišek Asiški",
+      "names": [
+        "Frančišek"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1285"
+    },
+    {
+      "month": 10,
+      "day": 5,
+      "saint": "Sv. Favstina Kowalska, devica",
+      "names": [
+        "Favstina"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1293"
+    },
+    {
+      "month": 10,
+      "day": 6,
+      "saint": "Sv. Bruno, duhovnik",
+      "names": [
+        "Bruno"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1300"
+    },
+    {
+      "month": 10,
+      "day": 15,
+      "saint": "Sv. Terezija Avilska, devica",
+      "names": [
+        "Terezija"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1354"
+    },
+    {
+      "month": 10,
+      "day": 17,
+      "saint": "Sv. Ignacij Antiohijski, škof in mučenec",
+      "names": [
+        "Ignacij"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1375"
+    },
+    {
+      "month": 10,
+      "day": 18,
+      "saint": "Sv. Luka, evangelist",
+      "names": [
+        "Luka"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1383"
+    },
+    {
+      "month": 10,
+      "day": 22,
+      "saint": "Sv. Janez Pavel II., papež",
+      "names": [
+        "Janez Pavel"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1408"
+    },
+    {
+      "month": 10,
+      "day": 28,
+      "saint": "Sv. Simon in Juda Tadej, apostola",
+      "names": [
+        "Simon",
+        "Juda",
+        "Tadej"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1429"
+    },
+    {
+      "month": 11,
+      "day": 4,
+      "saint": "Sv. Karel Boromejski, škof",
+      "names": [
+        "Karel"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1463"
+    },
+    {
+      "month": 11,
+      "day": 11,
+      "saint": "Sv. Martin iz Toursa, škof",
+      "names": [
+        "Martin"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1484"
+    },
+    {
+      "month": 11,
+      "day": 15,
+      "saint": "Sv. Albert Veliki, škof",
+      "names": [
+        "Albert"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1499"
+    },
+    {
+      "month": 11,
+      "day": 17,
+      "saint": "Sv. Elizabeta Ogrska, redovnica",
+      "names": [
+        "Elizabeta"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1520"
+    },
+    {
+      "month": 11,
+      "day": 22,
+      "saint": "Sv. Cecilija, devica in mučenka",
+      "names": [
+        "Cecilija"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1541"
+    },
+    {
+      "month": 11,
+      "day": 25,
+      "saint": "Sv. Katarina Aleksandrijska, devica in mučenka",
+      "names": [
+        "Katarina"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1573"
+    },
+    {
+      "month": 11,
+      "day": 30,
+      "saint": "Sv. Andrej, apostol",
+      "names": [
+        "Andrej"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1581"
+    },
+    {
+      "month": 12,
+      "day": 3,
+      "saint": "Sv. Frančišek Ksaverij, duhovnik",
+      "names": [
+        "Frančišek Ksaverij"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1589"
+    },
+    {
+      "month": 12,
+      "day": 6,
+      "saint": "Sv. Nikolaj iz Mire, škof",
+      "names": [
+        "Nikolaj",
+        "Miklavž"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1603"
+    },
+    {
+      "month": 12,
+      "day": 7,
+      "saint": "Sv. Ambrož, škof",
+      "names": [
+        "Ambrož"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1610"
+    },
+    {
+      "month": 12,
+      "day": 13,
+      "saint": "Sv. Lucija, devica in mučenka",
+      "names": [
+        "Lucija"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1656"
+    },
+    {
+      "month": 12,
+      "day": 14,
+      "saint": "Sv. Janez od Križa, duhovnik",
+      "names": [
+        "Janez"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1664"
+    },
+    {
+      "month": 12,
+      "day": 26,
+      "saint": "Sv. Štefan, prvi mučenec",
+      "names": [
+        "Štefan"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1685"
+    },
+    {
+      "month": 12,
+      "day": 27,
+      "saint": "Sv. Janez, apostol in evangelist",
+      "names": [
+        "Janez"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1693"
+    },
+    {
+      "month": 12,
+      "day": 31,
+      "saint": "Sv. Silvester I., papež",
+      "names": [
+        "Silvester"
+      ],
+      "source": "https://github.com/romcal/romcal/blob/812d82caf817946dea07fce94fadd77973834308/rites/roman1969/src/calendars/general-roman/index.ts#L1717"
+    }
+  ]
+}

@@ -381,7 +381,15 @@ const currentMonth = Number(
     month: "numeric",
   }).format(new Date()),
 );
-let month = currentMonth,
+const requestedMonth = Number(
+  new URLSearchParams(window.location.search).get("mesec"),
+);
+let month =
+    Number.isInteger(requestedMonth) &&
+    requestedMonth >= 1 &&
+    requestedMonth <= 12
+      ? requestedMonth
+      : currentMonth,
   filter = "all",
   query = "",
   saved = [],
@@ -636,6 +644,11 @@ function openPlant(id, trigger) {
       '"></button><p class="disclaimer">Termini so okvirni za osrednjo Slovenijo. Podatke prilagodite izbrani sorti in lokalnim razmeram. Za natančno globino in razmike preverite navodila dobavitelja.</p></div>',
     trigger,
   );
+  const fullGuide = document.createElement("a");
+  fullGuide.href = "rastline/" + id + "/";
+  fullGuide.className = "full-guide-link";
+  fullGuide.textContent = "Preberite celotni vodnik: " + p.name;
+  $("#dialog-content .dialog-body").append(fullGuide);
   updateSavedButtons();
 }
 function openAdvice(id, trigger) {
@@ -693,12 +706,14 @@ $("#months").innerHTML = months
 $("#plant-links").innerHTML = plants
   .map(
     (p) =>
-      '<button data-detail="' +
+      '<a href="rastline/' +
+      p.id +
+      '/" data-detail="' +
       p.id +
       '">' +
       p.name +
       icon("chevron") +
-      "</button>",
+      "</a>",
   )
   .join("");
 $("#copyright-year").textContent = new Intl.DateTimeFormat("en", {
@@ -738,7 +753,17 @@ document.addEventListener("click", (event) => {
       next[Math.min(index, next.length - 1)].focus({ preventScroll: true });
     else $("#garden-title").focus({ preventScroll: true });
   }
-  if (button.dataset.detail) openPlant(button.dataset.detail, button);
+  if (
+    button.dataset.detail &&
+    (button.tagName !== "A" ||
+      (!event.ctrlKey &&
+        !event.metaKey &&
+        !event.shiftKey &&
+        event.button === 0))
+  ) {
+    if (button.tagName === "A") event.preventDefault();
+    openPlant(button.dataset.detail, button);
+  }
   if (button.dataset.advice) openAdvice(button.dataset.advice, button);
   if (button.id === "reset-filters") {
     query = "";
